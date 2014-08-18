@@ -29,5 +29,11 @@ gems:
   - jekyll-assets/neat
 
 assets:
+  sources:
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/images
+    - _vendor/javascripts
+    - _vendor/stylesheets
   cachebust: soft
   debug: true
