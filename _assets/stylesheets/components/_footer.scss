@@ -2,12 +2,7 @@ $footer-background-color: $dark-gray;
 $footer-font-color: $white;
 
 #footer {
-  background-color: $footer-background-color;
-  color: $footer-font-color;
-
   .chat {
-    @include span-columns(12);
-    @include omega;
 
     background: $light-gray;
     text-align: center;
@@ -23,53 +18,54 @@ $footer-font-color: $white;
     }
   }
 
-  nav {
-    @include span-columns(12);
-    @include pad;
+  .main {
+    background-color: $footer-background-color;
+    color: $footer-font-color;
 
-    li {
-      display: inline-block;
-      padding-right: 1rem;
-    }
-
-    a {
-      color: $footer-font-color;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-  }
-
-  .newsletter-signup {
-    @include span-columns(12);
-    @include pad;
-
-    label {
-      color: $footer-font-color;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-
-    input {
-      background: transparent;
-      border: none;
-      border-radius: 0;
-      box-shadow: none;
-      border-bottom: 1px solid $footer-font-color;
-      @include placeholder {
-        font-style: italic;
-        color: $footer-font-color;
-      }
-    }
-  }
-
-  @include media($large-screen-up) {
     nav {
-      @include span-columns(6);
+      @include pad;
+
+      li {
+        display: inline-block;
+        padding-right: 1rem;
+      }
+
+      a {
+        color: $footer-font-color;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
     }
 
     .newsletter-signup {
-      @include span-columns(6);
-      @include omega;
+      @include pad;
+
+      label {
+        color: $footer-font-color;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      input {
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        border-bottom: 1px solid $footer-font-color;
+        @include placeholder {
+          font-style: italic;
+          color: $footer-font-color;
+        }
+      }
+    }
+
+    @include media($large-screen-up) {
+      @include display(flex);
+      @include align-items(center);
+
+      nav, .newsletter-signup {
+        @include flex(1);
+      }
     }
   }
 }

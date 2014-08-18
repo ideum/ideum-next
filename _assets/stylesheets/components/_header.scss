@@ -43,14 +43,22 @@ $header-main-bar-height: rem(117);
     }
   }
 
-  .logo, nav {
+  .main {
     height: $header-main-bar-height;
-    line-height: $header-main-bar-height;
-    vertical-align: middle;
+    @include display(flex);
+    @include align-items(center);
+    @include justify-content(center);
   }
 
   .logo {
-    @include span-columns(3);
+    @include flex(1);
+  }
+
+  nav {
+    @include flex(3);
+  }
+
+  .logo {
     text-align: center;
 
     a {
@@ -63,8 +71,6 @@ $header-main-bar-height: rem(117);
   }
 
   nav {
-    @include span-columns(9);
-    @include omega;
     text-align: center;
 
     li {
