@@ -10,7 +10,6 @@
 @import "neat";
 
 // Mixins
-@import 'mixins/flash';
 
 // Extends
 @import 'extends/button';
@@ -22,7 +21,6 @@
 @import 'forms';
 @import 'tables';
 @import 'lists';
-@import 'flashes';
 @import 'buttons';
 
 // Necessary to avoid flash of unrendered angular templates

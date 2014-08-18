@@ -1,27 +1,28 @@
 // Typography
-$sans-serif: $helvetica;
+$sans-serif: 'Roboto', $helvetica;
 $serif: $georgia;
 $base-font-family: $sans-serif;
 $header-font-family: $base-font-family;
 
 // Sizes
-$base-font-size: 1em;
+$base-font-size: 14px;
+$em-base: $base-font-size;
 $base-line-height: $base-font-size * 1.5;
 $unitless-line-height: $base-line-height / ($base-line-height * 0 + 1); // Strip units from line-height: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#Prefer_unitless_numbers_for_line-height_values
 $header-line-height: $base-font-size * 1.25;
-$base-border-radius: em(3);
+$base-border-radius: rem(3);
 
 // Colors
-$blue: #477DCA;
-$dark-gray: #333;
-$medium-gray: #999;
-$light-gray: #DDD;
-$light-red: #FBE3E4;
-$light-yellow: #FFF6BF;
-$light-green: #E6EFC2;
+// FIXME
+$black: #000;
+$dark-gray: #3E4857;
+$medium-gray: #7E7E7E;
+$light-gray: #D7D7D7;
+$white: #FFF;
+$blue: #5677FC;
 
 // Background Color
-$base-background-color: white;
+$base-background-color: $white;
 
 // Font Colors
 $base-font-color: $dark-gray;
@@ -35,12 +36,6 @@ $hover-button-color: $hover-link-color;
 
 // Border color
 $base-border-color: $light-gray;
-
-// Flash Colors
-$alert-color: $light-yellow;
-$error-color: $light-red;
-$notice-color: $light-yellow;
-$success-color: $light-green;
 
 // Forms
 $form-border-color: $base-border-color;
@@ -56,11 +51,12 @@ $form-font-family: $base-font-family;
 // $column: 90px;
 // $gutter: 30px;
 // $grid-columns: 12;
-// $max-width: em(1088);
+$max-width: rem(960);
 
 // Neat Breakpoints
-$medium-screen: em(640);
-$large-screen: em(860);
+// FIXME
+$medium-screen: rem(640);
+$large-screen: rem(860);
 
 $medium-screen-up: new-breakpoint(min-width $medium-screen 4);
 $large-screen-up: new-breakpoint(min-width $large-screen 8);
