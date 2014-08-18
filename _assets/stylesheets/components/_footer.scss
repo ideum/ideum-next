@@ -1,0 +1,75 @@
+$footer-background-color: $dark-gray;
+$footer-font-color: $white;
+
+#footer {
+  background-color: $footer-background-color;
+  color: $footer-font-color;
+
+  .chat {
+    @include span-columns(12);
+    @include omega;
+
+    background: $light-gray;
+    text-align: center;
+
+    a {
+      display: inline-block;
+      font-size: 2.5rem;
+      font-weight: 300;
+      background: $white;
+      color: $dark-gray;
+      margin: 1.5rem;
+      padding: 0.5rem 2rem;
+    }
+  }
+
+  nav {
+    @include span-columns(12);
+    @include pad;
+
+    li {
+      display: inline-block;
+      padding-right: 1rem;
+    }
+
+    a {
+      color: $footer-font-color;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+
+  .newsletter-signup {
+    @include span-columns(12);
+    @include pad;
+
+    label {
+      color: $footer-font-color;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    input {
+      background: transparent;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      border-bottom: 1px solid $footer-font-color;
+      @include placeholder {
+        font-style: italic;
+        color: $footer-font-color;
+      }
+    }
+  }
+
+  @include media($large-screen-up) {
+    nav {
+      @include span-columns(6);
+    }
+
+    .newsletter-signup {
+      @include span-columns(6);
+      @include omega;
+    }
+  }
+}
