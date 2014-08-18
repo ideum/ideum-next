@@ -1,0 +1,84 @@
+$header-social-bar-height: rem(43);
+$header-main-bar-height: rem(117);
+
+#header {
+  border: 1px solid $base-border-color;
+
+  .social-media-links {
+    @include fill-parent;
+    @include clearfix;
+
+
+    border-bottom: 1px solid $base-border-color;
+
+    h2, ul {
+      height: $header-social-bar-height;
+      line-height: $header-social-bar-height;
+      vertical-align: middle;
+    }
+
+    h2 {
+      float: right;
+      font-size: rem(12);
+      text-transform: uppercase;
+
+      color: $white;
+      background-color: $light-gray;
+      padding: {
+       left: rem(7);
+        right: rem(7);
+      }
+    }
+
+    ul {
+      float: right;
+    }
+
+    li {
+      display: inline-block;
+      padding-right: 1em;
+      a {
+        color: $light-gray;
+      }
+    }
+  }
+
+  .logo, nav {
+    height: $header-main-bar-height;
+    line-height: $header-main-bar-height;
+    vertical-align: middle;
+  }
+
+  .logo {
+    @include span-columns(3);
+    text-align: center;
+
+    a {
+      display: inline-block;
+      @include hide-text;
+      &:before { height: 120%; } // 100% isn't enough to mask all the risers
+      background: image-url("logo.png") no-repeat center center;
+      @include size(129px 50px);
+    }
+  }
+
+  nav {
+    @include span-columns(9);
+    @include omega;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      margin-right: 2em;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    a {
+      text-transform: uppercase;
+      color: $dark-gray;
+      font-weight: bold;
+    }
+  }
+}

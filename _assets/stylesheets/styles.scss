@@ -1,6 +1,8 @@
 // Bitters v0.10.0
 // http://bitters.bourbon.io
 
+@import "normalize";
+
 @import "bourbon";
 @import 'neat-helpers';
 
@@ -17,11 +19,15 @@
 @import 'extends/hide-text';
 
 // Typography and Elements
+@import 'layout';
 @import 'typography';
 @import 'forms';
 @import 'tables';
 @import 'lists';
 @import 'buttons';
+
+// Page Components
+@import 'components/header';
 
 // Necessary to avoid flash of unrendered angular templates
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
