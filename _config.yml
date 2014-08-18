@@ -21,3 +21,13 @@ exclude:
   - Gemfile.lock
   - Rakefile
   - s3_website.yml
+
+gems:
+  - bundler/setup # This has to be first in the list.
+  - jekyll-assets
+  - jekyll-assets/bourbon
+  - jekyll-assets/neat
+
+assets:
+  cachebust: soft
+  debug: true

@@ -13,6 +13,6 @@
   {% comment %}<meta property="og:image" content="{% if page.opengraph.image %}{{ page.opengraph.image }}{% else %} site.opengraph.default_image }}{% endif %}">{% endcomment %}
   <meta property="og:description" content="{% if page.opengraph.description %}{{ page.opengraph.description }}{% else %}{{ site.description }}{% endif %}"/>
 
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  {% stylesheet styles %}
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 </head>
