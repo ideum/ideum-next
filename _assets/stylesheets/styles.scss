@@ -24,3 +24,8 @@
 @import 'lists';
 @import 'flashes';
 @import 'buttons';
+
+// Necessary to avoid flash of unrendered angular templates
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
