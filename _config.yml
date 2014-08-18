@@ -1,14 +1,23 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+title: Ideum
+email: info@ideum.com
+description: >
+  Ideum provides a full range of exhibit design, Web design, and interactive
+  design services to museums, nonprofit organizations, and socially responsible
+  companies. We create dynamic interactive experiences for museum and Web
+  visitors.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://ideum.com" # the base hostname & protocol for your site
+twitter_username: ideum
+github_username:  ideum
 
 # Build settings
 markdown: kramdown
+permalink: pretty
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - s3_website.yml
