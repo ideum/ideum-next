@@ -5,6 +5,11 @@ $header-main-bar-height: rem(117);
   border: 1px solid $base-border-color;
 
   .social-media-links {
+    display: none;
+    @include media($medium-screen-up) {
+      display: block;
+    }
+
     @include fill-parent;
     @include clearfix;
 
@@ -38,7 +43,15 @@ $header-main-bar-height: rem(117);
       display: inline-block;
       padding-right: 1em;
       a {
-        color: $light-gray;
+        display: inline-block;
+        @include size(24px 24px);
+        border-radius: 12px;
+        line-height: 24px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 12px;
+        background: $light-gray;
+        color: $white;
       }
     }
   }

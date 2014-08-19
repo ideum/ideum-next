@@ -4,7 +4,7 @@ $footer-font-color: $white;
 #footer {
   .chat {
 
-    background: $light-gray;
+    background: $light-gray image-url('patterns/hex.svg') no-repeat center center;
     text-align: center;
 
     a {

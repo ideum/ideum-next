@@ -35,5 +35,6 @@ assets:
     - _assets/images
     - _vendor/javascripts
     - _vendor/stylesheets
+    - _vendor/fonts
   cachebust: soft
   debug: true
