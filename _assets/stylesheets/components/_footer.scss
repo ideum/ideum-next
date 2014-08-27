@@ -9,6 +9,7 @@ $footer-font-color: $white;
     color: $footer-font-color;
 
     nav {
+      @include navi-effect($footer-font-color);
       @include pad;
 
       li {
@@ -22,7 +23,6 @@ $footer-font-color: $white;
         text-transform: uppercase;
         position: relative;
       }
-      &.navi-effect { @include navi-effect(#FFF) }
     }
 
     .newsletter-signup {

@@ -84,6 +84,8 @@ $header-main-bar-height: rem(117);
   }
 
   nav {
+    @include navi-effect($dark-gray);
+
     text-align: center;
 
     li {
@@ -100,6 +102,5 @@ $header-main-bar-height: rem(117);
       font-weight: bold;
       position: relative;
     }
-    &.navi-effect { @include navi-effect(#ccc) }
   }
 }
