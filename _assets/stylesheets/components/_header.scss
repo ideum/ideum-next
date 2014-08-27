@@ -98,6 +98,8 @@ $header-main-bar-height: rem(117);
       text-transform: uppercase;
       color: $dark-gray;
       font-weight: bold;
+      position: relative;
     }
+    &.navi-effect { @include navi-effect(#ccc) }
   }
 }
