@@ -67,6 +67,12 @@ $base-background-color: $white;
 $base-font-color: $dark-gray;
 $base-accent-color: $dark-teal;
 
+// Font Weights
+$light: 300;
+$normal: 400;
+$bold: 700;
+$ultra-bold: 900;
+
 // Link Colors
 $base-link-color: $base-accent-color;
 $hover-link-color: darken($base-accent-color, 15);
