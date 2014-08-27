@@ -1,30 +1,18 @@
-ol.default {
-  list-style: upper-roman;
-  ol { 
-    padding-left: $base-line-height;
-    list-style: upper-alpha;
-    ol  { 
-      list-style: lower-roman ;
-      ol { 
-        list-style: lower-alpha ;
-      }
-    }
-  }
-}
-
 ul, ol {
   margin: 0;
   padding: 0;
   
+  list-style-type: none;
 
   &%default-ul {
     list-style-type: disc;
     margin-bottom: $base-line-height / 2;
     padding-left: $base-line-height;
-    li {
-        padding-left: $base-line-height;
+    ul {
+      padding-left: $base-line-height;
+      list-style-type: circle;
       ul {
-        padding-left: $base-line-height;
+        list-style-type: square;
       }
     }
   }
@@ -32,6 +20,17 @@ ul, ol {
   &%default-ol {
     margin-bottom: $base-line-height / 2;
     padding-left: $base-line-height;
+    list-style: decimal;
+    ol { 
+      padding-left: $base-line-height;
+      list-style: upper-alpha;
+      ol  { 
+        list-style: lower-roman ;
+        ol { 
+          list-style: lower-alpha ;
+        }
+      }
+    }
   }
 }
 
