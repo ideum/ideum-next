@@ -1,17 +1,28 @@
 %button {
   -webkit-font-smoothing: antialiased;
-  background-color: $base-button-color;
+  background-color: $base-background-color;
+  border: 3px solid $inactive-button-color;
   border-radius: $base-border-radius;
-  color: white;
+  color: $inactive-button-color;
   display: inline-block;
   font-size: $base-font-size;
-  font-weight: bold;
+  font-weight: $bold;
   line-height: 1;
   padding: .75em 1em;
   text-decoration: none;
+  text-transform: uppercase;
+  @include transition(background-color 0.5s ease, color 0.5s ease);
 
   &:hover {
-    background-color: $hover-button-color;
-    color: white;
+    background-color: $inactive-button-color;
+    color: $base-background-color;
+  }
+  &.active {
+    border-color: $base-button-color;
+    color: $base-button-color;
+  }
+  &.active:hover {
+    background-color: $base-button-color;
+    color: $base-background-color;
   }
 }

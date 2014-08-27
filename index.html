@@ -2,22 +2,26 @@
 layout: default
 ---
 
-<div class="home">
+<section class="our-products">
+  <h1>Our Products</h1>
 
-  <h1 class="page-heading">Posts</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae autem dicta eaque, deleniti hic cum. Dolores minima, beatae a explicabo, doloremque debitis deserunt alias quam nam veritatis atque! Sit, voluptas.</p>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <button>Touch Tables</button>
+  <button>Touch Walls</button>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <section class="touch-tables">
+    <article>
+      <h1>Touch Tables</h1>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi explicabo id ut ipsum saepe nemo voluptates natus cumque cupiditate similique esse perferendis illum blanditiis quas odio nobis officiis placeat, hic!</p>
 
-</div>
+      <ul>
+        <li>View Our Selection</li>
+        <li>Share This</li>
+      </ul>
+    </article>
+
+    <img src="FIXME">
+  </section>
+</section>
