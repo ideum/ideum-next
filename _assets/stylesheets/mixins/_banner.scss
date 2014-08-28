@@ -1,7 +1,6 @@
 @mixin banner($background-file, $background-color: $white) {
-  background: $light-gray image-url($background-file) no-repeat center center;
+  background: $vvv-light-gray image-url($background-file) no-repeat center center;
   text-align: center;
-
   a {
     display: inline-block;
     font-size: 2.5rem;
