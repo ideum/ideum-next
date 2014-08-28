@@ -101,12 +101,11 @@ $form-font-family: $base-font-family;
 // $column: 90px;
 // $gutter: 30px;
 // $grid-columns: 12;
-$max-width: rem(1280);
+$max-width: 1280px;
 
 // Neat Breakpoints
-// FIXME
-$medium-screen: rem(640);
-$large-screen: rem(860);
+$medium-screen: 640px;
+$large-screen: 960px;
 
 $medium-screen-up: new-breakpoint(min-width $medium-screen);
 $large-screen-up: new-breakpoint(min-width $large-screen);
