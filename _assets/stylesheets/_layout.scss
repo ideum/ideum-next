@@ -1,5 +1,4 @@
-#header,
-#content,
-#footer {
+#content {
   @include outer-container;
+  background-color: $content-background-color;
 }

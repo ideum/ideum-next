@@ -2,6 +2,7 @@ $header-social-bar-height: rem(43);
 $header-main-bar-height: rem(117);
 
 #header {
+  background-color: $content-background-color;
   border: 1px solid $base-border-color;
 
   .social-media-links {

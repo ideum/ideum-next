@@ -1,12 +1,15 @@
-$footer-background-color: $dark-gray;
+$footer-background-color: $deep-slate-blue;
 $footer-font-color: $white;
+$footer-overlap-height: 140px;
 
 #footer {
-  .chat { @include banner('patterns/hex.svg') }
+  margin-top: -$footer-overlap-height;
+  z-index: 0;
 
   .main {
     background-color: $footer-background-color;
     color: $footer-font-color;
+    padding-top: $footer-overlap-height;
 
     nav {
       @include navi-effect($footer-font-color);

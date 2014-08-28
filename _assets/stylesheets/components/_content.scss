@@ -1,0 +1,8 @@
+#content {
+  border-radius: $base-border-radius;
+  // opacity must be set to fix oddity in z-index spec
+  opacity: .99; 
+  overflow:hidden;
+  z-index: 100;
+  .chat { @include banner('patterns/hex.svg') }
+}
