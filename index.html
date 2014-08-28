@@ -2,6 +2,78 @@
 layout: default
 ---
 
+<section class="our-creative-services">
+  <h1>Our Creative Services</h1>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem excepturi unde itaque deleniti eaque, ea cupiditate magni nesciunt! Molestias ab, ducimus assumenda temporibus veritatis sunt pariatur dolorem perspiciatis odio eaque.</p>
+
+  <select><option>Browse By Type</option></select>
+  <select><option>Browse By Topic</option></select>
+
+  <div class="slider">
+    <article class="slide">
+      {% image placeholder-science-project-1.jpg %}
+
+      <div class="content">
+        <header>
+          <h2 class="category">Science</h2>
+          <h1 class="title">Project Title</h1>
+        </header>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ipsum aperiam, non nihil voluptate eligendi, quas obcaecati voluptatum unde voluptas iusto optio omnis possimus? Placeat accusantium reprehenderit dicta rem? Illo!</p>
+      </div>
+    </article>
+
+    <article class="slide">
+      <img src="{{ 'placeholder-science-project-2.jpg' | asset_path }}">
+
+      <div class="content">
+        <header>
+          <h2 class="category">Science</h2>
+          <h1 class="title">Project Title</h1>
+        </header>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ipsum aperiam, non nihil voluptate eligendi, quas obcaecati voluptatum unde voluptas iusto optio omnis possimus? Placeat accusantium reprehenderit dicta rem? Illo!</p>
+      </div>
+    </article>
+
+    <article class="slide">
+      {% image placeholder-science-project-3.jpg %}
+
+      <div class="content">
+        <header>
+          <h2 class="category">Science</h2>
+          <h1 class="title">Project Title</h1>
+        </header>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ipsum aperiam, non nihil voluptate eligendi, quas obcaecati voluptatum unde voluptas iusto optio omnis possimus? Placeat accusantium reprehenderit dicta rem? Illo!</p>
+      </div>
+    </article>
+  </div>
+
+  <ol class="slider-controls">
+    <li class="active"></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ol>
+
+  <a href="#FIXME" class="button">View All</a>
+</section>
+
+<section class="featured-blog-post">
+  {% image placeholder-blog-post-image.jpg %}
+  <article class="content">
+    <time>July 30th</time>
+    <a href="#FIXME">View All</a>
+    <h1>Blog Post</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic voluptatem necessitatibus reiciendis labore non nesciunt qui voluptatum amet sint corrupti corporis, cum error dolores, rerum ipsam nostrum excepturi voluptate, ipsa!</p>
+    <a href="#FIXME">Read More</a>
+    <a href="#FIXME">Share This</a>
+  </article>
+</section>
+
 <section class="our-products">
   <h1>Our Products</h1>
 
@@ -24,4 +96,8 @@ layout: default
 
     <img src="FIXME">
   </section>
+</section>
+
+<section class="chat">
+  <a class="button" href="#FIXME">Click here to build your own multitouch table</a>
 </section>
