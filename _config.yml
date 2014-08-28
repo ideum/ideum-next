@@ -37,4 +37,5 @@ assets:
     - _vendor/stylesheets
     - _vendor/fonts
   cachebust: soft
+  gzip: false
   debug: true
