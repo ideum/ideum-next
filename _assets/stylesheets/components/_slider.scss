@@ -1,0 +1,33 @@
+.slider {
+  position: relative;
+
+  .slides {
+    @include display(flex);
+    @include transition(transform $base-animation-speed $base-animation-easing);
+
+    height: 100%;
+  }
+
+  .slide {
+    @include flex-shrink(0); // Don't go below the specified width
+
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+
+    @include media($medium-screen-up) { width: (100% / 2); }
+    @include media($large-screen-up)  { width: (100% / 3); }
+  }
+
+  button.previous {
+    @include position(absolute, 0 null 0 0);
+    height: rem(50);
+    margin: auto;
+  }
+
+  button.next {
+    @include position(absolute, 0 0 0 null);
+    height: rem(50);
+    margin: auto;
+  }
+}

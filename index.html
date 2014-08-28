@@ -11,9 +11,9 @@ layout: default
   <select><option>Browse By Type</option></select>
   <select><option>Browse By Topic</option></select>
 
-  <div class="slider">
+  <div ideum-slider>
 
-    <article class="slide">
+    <article ideum-slide>
 
       {% image placeholder-science-project-1.jpg %}
 
@@ -22,16 +22,19 @@ layout: default
           <h2 class="category">Science</h2>
           <h1 class="title">Project Title</h1>
         </header>
-        
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ipsum aperiam, non nihil voluptate eligendi, quas obcaecati voluptatum unde voluptas iusto optio omnis possimus? Placeat accusantium reprehenderit dicta rem? Illo!</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
+        ipsum aperiam, non nihil voluptate eligendi, quas obcaecati voluptatum
+        unde voluptas iusto optio omnis possimus? Placeat accusantium
+        reprehenderit dicta rem? Illo!</p>
 
       </div>
 
     </article>
 
-    <article class="slide">
+    <article ideum-slide>
 
-      <img src="{{ 'placeholder-science-project-2.jpg' | asset_path }}">
+      {{ 'placeholder-science-project-2.jpg' | image }}
 
       <div class="content">
 
@@ -39,13 +42,18 @@ layout: default
           <h2 class="category">Science</h2>
           <h1 class="title">Project Title</h1>
         </header>
-        
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ipsum aperiam, non nihil voluptate eligendi, quas obcaecati voluptatum unde voluptas iusto optio omnis possimus? Placeat accusantium reprehenderit dicta rem? Illo!</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
+        ipsum aperiam, non nihil voluptate eligendi, quas obcaecati voluptatum
+        unde voluptas iusto optio omnis possimus? Placeat accusantium
+        reprehenderit dicta rem? Illo!</p>
+
       </div>
     </article>
 
-    <article class="slide">
-      {% image placeholder-science-project-3.jpg %}
+    <article ideum-slide>
+
+      <img src="{{ 'placeholder-science-project-3.jpg' | asset_path }}">
 
       <div class="content">
 
@@ -53,8 +61,11 @@ layout: default
           <h2 class="category">Science</h2>
           <h1 class="title">Project Title</h1>
         </header>
-        
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ipsum aperiam, non nihil voluptate eligendi, quas obcaecati voluptatum unde voluptas iusto optio omnis possimus? Placeat accusantium reprehenderit dicta rem? Illo!</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
+        ipsum aperiam, non nihil voluptate eligendi, quas obcaecati voluptatum
+        unde voluptas iusto optio omnis possimus? Placeat accusantium
+        reprehenderit dicta rem? Illo!</p>
 
       </div>
 

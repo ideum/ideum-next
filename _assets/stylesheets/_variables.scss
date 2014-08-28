@@ -97,6 +97,10 @@ $form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color
 $form-font-size: $base-font-size;
 $form-font-family: $base-font-family;
 
+// Animations
+$base-animation-speed: 0.4s;
+$base-animation-easing: $ease-in-out-quad;
+
 // Neat Overrides
 // $column: 90px;
 // $gutter: 30px;
