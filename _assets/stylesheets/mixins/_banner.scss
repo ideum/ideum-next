@@ -1,13 +1,21 @@
 @mixin banner($background-file, $background-color: $white) {
   background: $vvv-light-gray image-url($background-file) no-repeat center center;
   text-align: center;
-  a {
+  height: $footer-overlap-height;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .button {
+    background: $background-color;
     display: inline-block;
+    max-width: 86%;
+    padding: 0.5rem 2rem;
+  }
+  a {
+    color: $dark-gray; 
     font-size: 2.5rem;
     font-weight: 300;
-    background: $background-color;
-    color: $dark-gray;
-    margin: 1.5rem;
-    padding: 0.5rem 2rem;
+    line-height: 1em;
+
   }
 }
