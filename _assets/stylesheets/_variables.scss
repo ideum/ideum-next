@@ -1,6 +1,3 @@
-//$visual-grid: true;
-$visual-grid-index: front;
-
 // Typography
 $sans-serif: 'Roboto', $helvetica;
 $serif: $georgia;
@@ -17,8 +14,8 @@ $base-border-radius: rem(2);
 $footer-overlap-height: 140px;
 
 // Colors
-$black:             hsl(0,     0%,   0%);
-$white:             hsl(0,     0%, 100%);
+$black:             hsl(  0,   0%,   0%);
+$white:             hsl(  0,   0%, 100%);
 
 $very-dark-gray:    hsl(216,  17%,  29%);
 $navlink-off-gray:  hsl(215,  10%,  57%);
@@ -107,10 +104,14 @@ $base-animation-speed: 0.4s;
 $base-animation-easing: $ease-in-out-quad;
 
 // Neat Overrides
-// $column: 90px;
-// $gutter: 30px;
-// $grid-columns: 12;
+$column: 60px;
+$gutter: 20px;
+$grid-columns: 12;
 $max-width: 1280px;
+
+// Neat Visual Grid
+// $visual-grid: true;
+$visual-grid-index: front;
 
 // Neat Breakpoints
 $medium-screen: 640px;
