@@ -10,51 +10,56 @@ $footer-font-color: $white;
     color: $footer-font-color;
     padding-top: $footer-overlap-height;
 
-    nav {
-      @include navi-effect($footer-font-color);
-      @include pad;
+    .main-interior {
+      @include outer-container;
 
-      li {
-        display: inline-block;
-        padding-right: 1rem;
-      }
+      nav {
+        @include navi-effect($footer-font-color);
+        @include pad;
+        @include shift(.7);
 
-      a {
-        color: $footer-font-color;
-        font-weight: bold;
-        text-transform: uppercase;
-        position: relative;
-      }
-    }
+        li {
+          display: inline-block;
+          padding-right: 1rem;
+        }
 
-    .newsletter-signup {
-      @include pad;
-
-      label {
-        color: $footer-font-color;
-        font-weight: bold;
-        text-transform: uppercase;
-      }
-
-      input {
-        background: transparent;
-        border: none;
-        border-radius: 0;
-        box-shadow: none;
-        border-bottom: 1px solid $footer-font-color;
-        @include placeholder {
-          font-style: italic;
+        a {
           color: $footer-font-color;
+          font-weight: bold;
+          text-transform: uppercase;
+          position: relative;
         }
       }
-    }
 
-    @include media($large-screen-up) {
-      @include display(flex);
-      @include align-items(center);
+      .newsletter-signup {
+        @include pad;
 
-      nav, .newsletter-signup {
-        @include flex(1);
+        label {
+          color: $footer-font-color;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+
+        input {
+          background: transparent;
+          border: none;
+          border-radius: 0;
+          box-shadow: none;
+          border-bottom: 1px solid $footer-font-color;
+          @include placeholder {
+            font-style: italic;
+            color: $footer-font-color;
+          }
+        }
+      }
+
+      @include media($large-screen-up) {
+        @include display(flex);
+        @include align-items(center);
+
+        nav, .newsletter-signup {
+          @include flex(1);
+        }
       }
     }
   }
