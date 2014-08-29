@@ -9,6 +9,7 @@
   font-weight: $bold;
   line-height: 1;
   padding: .75em 1em;
+  position: relative;
   text-decoration: none;
   text-transform: uppercase;
   @include transition(background-color 0.5s ease, color 0.5s ease);
@@ -16,10 +17,35 @@
   &:hover {
     background-color: $inactive-button-color;
     color: $base-background-color;
+    &.pointer:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      z-index: 1000;
+      border-top: 16px solid $inactive-button-color;
+      border-left: 16px solid transparent;
+      border-right: 16px solid transparent;
+      margin-left: -16px;
+      @include transition(background-color 0.5s ease, color 0.5s ease);
+    }
   }
   &.active {
+    background-color: $base-button-color;
     border-color: $base-button-color;
-    color: $base-button-color;
+    color: $base-background-color;
+    &.pointer:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      z-index: 1000;
+      border-top: 16px solid $base-button-color;
+      border-left: 16px solid transparent;
+      border-right: 16px solid transparent;
+      margin-left: -16px;
+      @include transition(background-color 0.5s ease, color 0.5s ease);
+    }
   }
   &.active:hover {
     background-color: $base-button-color;
