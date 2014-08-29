@@ -17,7 +17,7 @@ $header-main-bar-height: rem(117);
 
     h2, ul {
       //height: $header-social-bar-height;
-height:auto;
+      height:auto;
       line-height: $header-social-bar-height;
       vertical-align: middle;
     }
@@ -57,7 +57,7 @@ height:auto;
     }
     .tab-wrap {
       align-items: stretch;
-      display: flex !Important;
+      display: flex !important;
       @include span-columns(6, block-collapse);
     }
 
@@ -74,6 +74,9 @@ height:auto;
         font-size: 12px;
         background: $light-gray;
         color: $white;
+        &:hover {
+          background-color: $very-dark-gray;
+        }
       }
     }
     .social-interior {
