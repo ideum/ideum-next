@@ -1,11 +1,12 @@
 #content {
   border-radius: $base-border-radius;
-  // opacity must be set (below 1) to fix oddity in z-index spec
-  opacity: .99; 
   overflow:hidden;
   padding:rem(30) 0 0 0;
+  position: relative; // Force a new z-index stacking context
   z-index: 100;
+
   .chat { @include banner('patterns/hex.svg') }
+
   .section-info {
     margin:0 auto;
     width: 61%;
