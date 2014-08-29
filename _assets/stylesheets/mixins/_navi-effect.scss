@@ -11,7 +11,11 @@
     background: $background;
     content: '';
     opacity: 0;
-    @include transition(height 0.3s, opacity 0.3s, transform 0.3s);
+    @include transition(
+      height $base-animation-speed $base-animation-easing,
+      opacity $base-animation-speed $base-animation-easing,
+      transform $base-animation-speed $base-animation-easing
+    );
     @include transform(translateY(em(-10)));
   }
 
