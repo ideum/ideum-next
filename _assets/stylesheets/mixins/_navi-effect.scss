@@ -1,6 +1,6 @@
 @mixin navi-effect($background: $white) {
   a {
-    padding: 0 0 em(10);
+    padding: 0 0 em(5);
   }
   a::after {
     position: absolute;
@@ -17,7 +17,7 @@
 
   a:hover::after,
   a:focus::after {
-    height: 5px;
+    height: 2px;
     opacity: 1;
     @include transform(translateY(0px));
   }
