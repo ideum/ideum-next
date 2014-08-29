@@ -12,7 +12,7 @@
     content: '';
     opacity: 0;
     @include transition(height 0.3s, opacity 0.3s, transform 0.3s);
-    @include transform(translatey(em(-10)));
+    @include transform(translateY(em(-10)));
   }
 
   a:hover::after,

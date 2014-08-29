@@ -14,41 +14,31 @@
   text-transform: uppercase;
   @include transition(background-color 0.5s ease, color 0.5s ease);
 
+  &.pointer:after{
+    content: "";
+    margin: auto;
+    @include position(absolute, 100% 0 null 0);
+    @include transition(border-width 0.5s ease);
+    @include triangle(0px, $inactive-button-color, down);
+  }
+
   &:hover {
     background-color: $inactive-button-color;
     color: $base-background-color;
     &.pointer:after {
-      content: "";
-      position: absolute;
-      top: 100%;
-      left: 50%;
-      z-index: 1000;
-      border-top: 16px solid $inactive-button-color;
-      border-left: 16px solid transparent;
-      border-right: 16px solid transparent;
-      margin-left: -16px;
-      @include transition(background-color 0.5s ease, color 0.5s ease);
+      @include triangle(32px, $inactive-button-color, down);
     }
   }
   &.active {
     background-color: $base-button-color;
     border-color: $base-button-color;
     color: $base-background-color;
-    &.pointer:after {
-      content: "";
-      position: absolute;
-      top: 100%;
-      left: 50%;
-      z-index: 1000;
-      border-top: 16px solid $base-button-color;
-      border-left: 16px solid transparent;
-      border-right: 16px solid transparent;
-      margin-left: -16px;
-      @include transition(background-color 0.5s ease, color 0.5s ease);
+    &:hover {
+      background-color: $base-button-color;
+      color: $base-background-color;
     }
-  }
-  &.active:hover {
-    background-color: $base-button-color;
-    color: $base-background-color;
+    &.pointer:after {
+      @include triangle(32px, $base-button-color, down);
+    }
   }
 }
