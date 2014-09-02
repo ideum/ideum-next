@@ -19,7 +19,7 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
-  - Rakefile
+  - Guardfile
   - s3_website.yml
 
 gems:
