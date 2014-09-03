@@ -67,15 +67,23 @@ $header-main-bar-height: rem(117);
       a {
         display: inline-block;
         @include size(24px 24px);
+        border: 1px solid $light-gray;
         border-radius: 12px;
-        line-height: 24px;
+        line-height: 21px;
         text-align: center;
         vertical-align: middle;
-        font-size: 12px;
-        background: $light-gray;
-        color: $white;
+        font-size: 11px;
+        background: $white;
+        color: $light-gray;
         &:hover {
           background-color: $very-dark-gray;
+          border: 1px solid $very-dark-gray;
+          color: $white;
+          font-size:12px;
+        }
+        .facebook {
+          position: relative;
+            left:-2px; top:-1px;
         }
       }
     }
