@@ -1,7 +1,7 @@
 @mixin banner($background-file, $background-color: $white) {
   background: $vvv-light-gray image-url($background-file) no-repeat center center;
   text-align: center;
-  height: $footer-overlap-height;
+  min-height: $footer-overlap-height;
   display: flex;
   align-items: center;
   justify-content: center;
