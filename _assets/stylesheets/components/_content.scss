@@ -5,10 +5,282 @@
   position: relative; // Force a new z-index stacking context
   z-index: 100;
 
-  .chat { @include banner('patterns/hex.svg') }
+  .chat { 
+      @include banner('patterns/hex.svg');
+        padding: $gutter inherit;
+        height:auto;
+        @include media($medium-screen-up) {
+          max-height: $footer-overlap-height;
+          padding: $gutter;
+        }      
+  }
 
   .section-info {
+    clear: both;
     margin:0 auto;
-    width: 61%;
+    text-align: center;
+    width: 70%;
+  }
+
+  .our-creative-services {
+    padding-bottom: $large-gutter;
+    .slider {
+      padding-bottom: $medium-gutter;
+    }
+  }
+
+  .featured-blog-post {
+    background-color: $vvv-light-gray;
+  }
+
+  .post-style {
+    position: relative;
+    .txt-wrap {
+      padding:$large-gutter 0;
+      .time {
+        color: $medium-gray;
+        text-transform: uppercase;
+        sup {
+          font-stretch: semi-expanded; // comp calls for it - future feature
+        }
+      }
+      .view, .share {
+        float: right;
+      }
+      a.view, a.share, a.read {
+        text-transform: uppercase;
+      }
+      h1 a, a.view, a.share, a.read {
+        font-weight: $bold;
+        color: $very-dark-gray;
+        &:hover {
+          color: lighten($very-dark-gray, 15);
+        }
+      }
+      h1 a {
+        font-weight: $ultra-bold;
+      }
+      .footer {
+        @include span-columns(10);
+        @include omega;
+        padding: $gutter 0 0 0;
+        @include media($medium-screen-up) {
+          @include span-columns(4);
+          height: 4em;
+          padding:0 0 $large-gutter + $gutter;        
+          position: absolute;
+          bottom: 0;
+        }
+      }
+    }
+  }
+
+
+  .social-media-feed {
+    @include span-columns(12); 
+    @include omega;   
+    .social-media-feed-slider {
+      display: flex;
+      flex-wrap: wrap; 
+      .item {
+
+        @include media($medium-screen-up) { 
+          width: 33.333%;
+        }        
+        flex-wrap: wrap;
+        float:left;
+        max-height:427px;
+        position: relative;
+        width:100%;
+        .social-icon {
+          color: $white;
+          font-size: 32px;
+          position: absolute;
+          left: rem(18); top: rem(10);
+        }
+        &.youtube {
+          
+        }
+        &.twitter {
+          background-color: $medium-blue;
+          .content {
+            width:80%;
+            margin:0 auto;
+            padding: ($large-gutter + $gutter ) 0;
+            h2 {
+              color: $white;
+              word-wrap: break-word;
+            }
+          }
+          .social-icon {} 
+        }
+        .footer {
+          @include span-columns(11);
+          @include media($medium-screen-up) {
+            @include span-columns(10);
+          }
+          @include omega;
+          padding: $gutter 0 0 0;
+          @include media($medium-screen-up) {
+            height: 4em;
+            padding:0 0 $large-gutter + $gutter;        
+            position: absolute;
+            bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  
+   .our-products { 
+    /* no op */
+    .section-info {
+      padding-bottom: $medium-gutter;
+    }
+    .touch-tables {
+      background-color: $salmon;
+      min-height:380px;
+      position: relative;
+      .content {
+        /* no op */
+        .img-wrap {
+          display:none;
+          @include media($medium-screen-up) {
+            display:block;
+          }
+          img {
+            display: block;
+            position: absolute;
+              bottom: 0;  right: 0;            
+            width: 50%;
+          }
+        }
+        .txt-wrap {
+          padding:0 0 $medium-gutter 0;
+          @include media($medium-screen-up) {
+            padding:$medium-gutter 0;
+          }
+          h1, h1 a, p {
+            color: $white;
+          }
+          .read, .share {
+            float: initial;
+            margin-right:1em;
+          }
+           a.read, a.share {
+            color: $white;
+            &:hover {
+              color: lighten($white, 15);
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  .featured-pages { 
+    @include span-columns(12); 
+    @include omega;   
+    padding-bottom: $medium-gutter;
+    @include media($medium-screen-up) { 
+      display: flex;
+      flex-wrap: wrap;      
+      justify-content: space-between;
+    }
+    .content {
+      @include clearfix;
+      width: 100%;
+      @include media($medium-screen-up) { 
+        @include span-columns(6, block-collapse);
+        @include omega; 
+      }
+      float:left;
+      margin:0;      
+      min-height: 380px;
+      position:relative;
+      &.initiatives {
+        background: image-url("placeholder-featured-pages-initiatives.jpg") no-repeat 0 0;
+        background-size:cover;
+      }
+      &.team {
+        background: image-url("placeholder-featured-pages-team.jpg") no-repeat bottom right;
+        background-size:cover;
+      }    
+      .txt-wrap {
+        @include span-columns(10);
+        @include shift(1);
+        padding:0 0 $medium-gutter 0;
+        @include media($medium-screen-up) {
+          @include span-columns(8, block-collapse);
+          @include shift(2);
+          padding: $gutter 0 ($large-gutter * 2);
+          flex-wrap: wrap;
+        }
+        h1, h1 a, p {
+          color: $white;
+        }
+        .read, .share {
+          float: initial;
+          margin-right:1em;
+        }
+         a.read, a.share {
+          color: $white;
+          &:hover {
+            color: lighten($white, 15);
+          }
+        }
+        .footer {
+          @include span-columns(12);
+          padding: $gutter 0 0 0;
+          @include media($medium-screen-up) {
+            @include span-columns(8);
+            height: 4em;
+            margin-top: $medium-gutter;
+            padding:0 0 $large-gutter + $gutter; 
+            position:absolute;
+              bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .post-style {
+    @include row;
+    overflow: hidden;
+    .img-wrap {
+      @include span-columns(12);
+      @include media($medium-screen-up) {
+        @include span-columns(6);
+      }
+      margin: 0;
+      overflow: hidden;
+      img {
+        display: block;
+        float: left;
+      }
+    }
+    .txt-wrap {
+      @include span-columns(10);
+      @include shift(1);
+      @include media($medium-screen-up) {
+        @include span-columns(4);
+        @include shift(1);
+      }
+      @include omega;
+    }
+    @include media($medium-screen-up) {
+      &.img-left { /* no op */ }
+      &.img-right {
+        .img-wrap{ @include shift(6); }
+        .txt-wrap{ @include shift(-11); }
+      }
+    }
+    .content {
+      @include clearfix;
+      height: 100%;
+      width: 100%;
+    }
   }
 }

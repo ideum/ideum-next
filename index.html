@@ -77,58 +77,96 @@ layout: default
 
   </div>
 
-  <ol class="slider-controls">
-    <li class="active"></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ol>
+  <div class="section-info">
 
-  <a href="#FIXME" class="button">View All</a>
+    <ol class="slider-controls">
+      <li class="active"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ol>
+
+    <a href="#FIXME" class="button active">View All</a>
+
+  </div>
 
 </section>
 
-<section class="featured-blog-post">
-
-  {% image placeholder-blog-post-image.jpg %}
+<section class="featured-blog-post post-style img-left">
 
   <article class="content">
-    <time>July 30th</time>
-    <a href="#FIXME">View All</a>
-    <h1>Blog Post</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic voluptatem necessitatibus reiciendis labore non nesciunt qui voluptatum amet sint corrupti corporis, cum error dolores, rerum ipsam nostrum excepturi voluptate, ipsa!</p>
-    <a href="#FIXME">Read More</a>
-    <a href="#FIXME">Share This</a>
+
+    <div class="img-wrap">
+
+      <a href="#FIXME">{% image placeholder-blog-post-image.jpg %}</a>
+
+    </div>
+
+    <div class="txt-wrap">
+
+      <time class="time">July 30<sup>th</sup></time>
+      <a class="view" href="#FIXME">View All</a>
+
+      <h1>
+        <a href="#FIXME">Blog Post<!-- with a Long Double Line Title --></A>
+      </h1>
+      <p>
+        Limited to 160 characters, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut. Lorem ipsum dolor sit amet, consectetuer adipiscing elit...
+      </p>
+
+      <footer class="footer">
+        <a class="read" href="#FIXME">Read More</a>
+        <a class="share" href="#FIXME">Share This</a>
+      </footer>
+
+    </div>
+
   </article>
 
 </section>
 
 <section class="our-products">
 
-  <h1>Our Products</h1>
+  <div class="section-info">
 
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae autem dicta eaque, deleniti hic cum. Dolores minima, beatae a explicabo, doloremque debitis deserunt alias quam nam veritatis atque! Sit, voluptas.</p>
+    <h1>Our Products</h1>
 
-  <button class="pointer active">Touch Tables</button>
-  <button class="pointer">Touch Walls</button>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae autem dicta eaque, deleniti hic cum. Dolores minima, beatae a explicabo, doloremque debitis deserunt alias quam nam veritatis atque! Sit, voluptas.</p>
 
-  <section class="touch-tables">
+    <button class="pointer active">Touch Tables</button>
+    <button class="pointer">Touch Walls</button>
 
-    <article>
+  </div>
 
-      <h1>Touch Tables</h1>
+  <section class="touch-tables post-style img-left">
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi explicabo id ut ipsum saepe nemo voluptates natus cumque cupiditate similique esse perferendis illum blanditiis quas odio nobis officiis placeat, hic!</p>
+    <article class="content">
 
-      <ul>
-        <li>View Our Selection</li>
-        <li>Share This</li>
-      </ul>
+      <div class="img-wrap">
+
+        <a href="#FIXME">{% image product-touch-table.jpg %}</a>
+
+      </div>
+
+      <div class="txt-wrap">
+
+        <h1>
+          <a href="#FIXME">Touch Tables</a>
+        </h1>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi explicabo id ut ipsum saepe nemo voluptates natus cumque cupiditate similique esse perferendis illum blanditiis quas odio nobis officiis placeat, hic!
+        </p>
+
+        <footer class="footer">
+          <a class="read" href="#FIXME">View Our Selection</a>
+          <a class="share" href="#FIXME">Share This</a>
+        </footer>
+
+      </div>
 
     </article>
-
-    {% image product-touch-table.jpg %}
 
   </section>
 
@@ -146,75 +184,96 @@ layout: default
 
 <section class="featured-pages">
 
-  <article class="content">
+  <article class="content initiatives">
 
-    <h1>Software Initiatives</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic voluptatem necessitatibus reiciendis labore non nesciunt qui voluptatum amet sint corrupti corporis, cum error dolores, rerum ipsam nostrum excepturi voluptate, ipsa!</p>
-    <a href="#FIXME">Read More</a>
-    <a href="#FIXME">Share This</a>
+    <div class="txt-wrap">
+
+      <h1>
+        <a href="#FIXME">Software Initiatives</a>
+      </h1>
+      <p>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exercitation ullamcorper suscipit.
+      </p>
+
+      <footer class="footer">
+        <a class="read" href="#FIXME">View Our Selection</a>
+        <a class="share" href="#FIXME">Share This</a>
+      </footer>
+
+    </div>
 
   </article>
 
-  <article class="content">
+  <article class="content team">
 
-    <h1>Meet the Team</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic voluptatem necessitatibus reiciendis labore non nesciunt qui voluptatum amet sint corrupti corporis, cum error dolores, rerum ipsam nostrum excepturi voluptate, ipsa!</p>
-    <a href="#FIXME">Read More</a>
-    <a href="#FIXME">Share This</a>
+    <div class="txt-wrap">
+
+      <h1>
+        <a href="#FIXME">Meet the Team</a>
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exercitation ullamcorper suscipit.
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exercitation ullamcorper suscipit.
+      </p>
+
+      <footer class="footer">
+        <a class="read" href="#FIXME">View Team</a>
+        <a class="share" href="#FIXME">Share This</a>
+      </footer>
+
+    </div>
 
   </article>
 
 </section>
 
-<section class="the-buzz-feed">
+<section class="social-media-feed">
 
-  <h1>The Buzz Feed</h1>
+  <div class="section-info">
 
-  <select><option>Browse By Media Type</option></select>  
+    <h1>Social Media Feed</h1>
 
-  <section class="youtube-item">
+    <select><option>Browse By Media Type</option></select>
 
-    <article>
+  </div>
 
-      <video controls style="width:427px;height:427px;" poster="{{ 'placeholder-buzz-feed-1.jpg' | asset_path }}">
+  <div class="social-media-feed-slider">
+
+    <article class="youtube item">
+
+      <video controls style="width:100%;height:auto;" poster="{{ 'placeholder-buzz-feed-1.jpg' | asset_path }}">
       </video>
 
-    </article>
-
-    <i class="social-icon youtube"></i>
-
-  </section>
-
-  <section class="twitter-item">
-
-    <article>
-
-      <h1>Touch Tables</h1>
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi explicabo id ut ipsum saepe nemo voluptates natus cumque cupiditate similique esse perferendis illum blanditiis quas odio nobis officiis placeat, hic!</p>
-
-      <ul>
-        <li>View Our Selection</li>
-        <li>Share This</li>
-      </ul>
+      <i class="social-icon youtube"></i>
 
     </article>
 
-    <i class="social-icon twitter"></i>
+    <article class="twitter item">
 
-  </section>
+      <div class="content">
 
-  <section class="flickr-item">
+        <h2>Ideum Daily is out! http://paper.li/ideum/1406302985 … Stories via @paige_roberts @carlfranklin</h2>
 
-    <article>
+        <footer class="footer">
+          <a class="read" href="#FIXME">Retweet</a>
+          <a class="share" href="#FIXME">View</a>
+        </ul>
+
+      </div>
+
+      <i class="social-icon twitter"></i>
+
+    </article>
+
+    <article class="flickr item">
 
       {% image placeholder-buzz-feed-2.jpg %}
 
+      <i class="social-icon flickr"></i>
+
     </article>
 
-    <i class="social-icon flickr"></i>
-
-  </section>
+  </div>
 
 </section>
 
