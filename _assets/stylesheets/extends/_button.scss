@@ -3,12 +3,13 @@
   background-color: $base-background-color;
   border: 3px solid $inactive-button-color;
   border-radius: $base-border-radius;
-  color: $inactive-button-color;
+  color: $very-dark-gray;
   display: inline-block;
   font-size: $base-font-size;
   font-weight: $bold;
   line-height: 1;
-  padding: .75em 1em;
+  margin: .5em;
+  padding: rem(20) 2em;
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
