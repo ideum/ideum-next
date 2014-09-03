@@ -64,6 +64,8 @@ $medium-red:        hsl(  4, 100%,  79%);
 $light-red:         hsl(  0,  68%,  88%);
 $very-light-red:    hsl(  0,  66%,  93%);
 
+$salmon:            hsl(  4, 100%,  70%);
+
 $off-white:         $vv-light-gray;
 
 // Background Color
@@ -83,7 +85,7 @@ $ultra-bold: 900;
 // Link Colors
 $base-link-color: $base-accent-color;
 $hover-link-color: darken($base-accent-color, 15);
-$base-button-color: $dark-gray;
+$base-button-color: $very-dark-gray;
 $inactive-button-color: $very-light-gray;
 
 // Border color
@@ -108,14 +110,18 @@ $column: 60px;
 $gutter: 20px;
 $grid-columns: 12;
 $max-width: 1280px;
+$medium-gutter: $gutter * 1.75;
+$large-gutter: $gutter * 2.5;
 
 // Neat Visual Grid
-// $visual-grid: true;
+$visual-grid: true;
 $visual-grid-index: front;
 
 // Neat Breakpoints
+$small-screen: 280px;
 $medium-screen: 640px;
 $large-screen: 960px;
 
+$small-screen-up: new-breakpoint(min-width $small-screen);
 $medium-screen-up: new-breakpoint(min-width $medium-screen);
 $large-screen-up: new-breakpoint(min-width $large-screen);
