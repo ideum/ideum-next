@@ -35,7 +35,7 @@ $header-main-bar-height: rem(117);
       }
 
       a {
-        color: $medium-light-gray;
+        color: $very-light-gray;
         &:hover { color: $very-dark-gray }
       }
       &.active a {
@@ -127,7 +127,7 @@ $header-main-bar-height: rem(117);
 
     a {
       text-transform: uppercase;
-      color: $navlink-off-gray;
+      color: $dark-gray;
       font-weight: bold;
       position: relative;
       &:hover {

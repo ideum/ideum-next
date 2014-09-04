@@ -53,11 +53,11 @@ ol {
       margin: 0 .6em;
       width: 14px;
       &:hover {
-        background-color: $deep-slate-blue;
+        background-color: $very-dark-gray;
       }
       &.active {
         background-color: $white;
-        border: 3px solid $deep-slate-blue;
+        border: 3px solid $very-dark-gray;
         height: 16px;
         width: 16px;
         &:hover {

@@ -19,14 +19,11 @@ $white:             hsl(  0,   0%, 100%);
 
 $vv-dark-gray:      hsl(215,  18%,  25%);
 $very-dark-gray:    hsl(216,  17%,  29%);
-$navlink-off-gray:  hsl(215,  10%,  57%);
 $dark-gray:         hsl(216,  11%,  53%);
 $medium-gray:       hsl(  0,   0%,  72%);
 $light-gray:        hsl(  0,   0%,  78%);
-$medium-light-gray: hsl(  0,   0%,  84%);
 $very-light-gray:   hsl(  0,   0%,  88%);
 $vv-light-gray:     hsl(  0,   0%,  94%);
-$vvv-light-gray:    hsl(  0,   0%,  96%);
 
 $very-dark-teal:    hsl(170,  58%,  59%);
 $dark-teal:         hsl(170,  58%,  59%);
@@ -64,13 +61,9 @@ $medium-red:        hsl(  4, 100%,  79%);
 $light-red:         hsl(  0,  68%,  88%);
 $very-light-red:    hsl(  0,  66%,  93%);
 
-$salmon:            hsl(  4, 100%,  70%);
-
-$off-white:         $vv-light-gray;
-
 // Background Color
 $content-background-color: $white;
-$base-background-color: $off-white;
+$base-background-color: $vv-light-gray;
 
 // Font Colors
 $base-font-color: $dark-gray;
