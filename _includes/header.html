@@ -1,4 +1,4 @@
-<header id="header">
+<header id="header" ng-controller="headerCtrl">
 
   <section class="social-media-links">
 
@@ -33,6 +33,8 @@
     <h1 class="logo"><a href="{{ baseurl }}/">Ideum</a></h1>
 
     <nav>
+      <button ng-click="toggleMenu()">Menu</button>
+
       <ul>
         <li><a href="#FIXME">Creative Services</a></li>
         <li class="active"><a href="#FIXME">Multitouch Tables</a></li>
@@ -44,3 +46,20 @@
   </div>
 
 </header>
+
+<nav id="mobile-slideout-menu" ideum-mobile-slideout-menu ng-show="open">
+  <header>
+    <h1>Menu</h1>
+    <button class="close" ng-click="close()">&times;</button>
+  </header>
+
+  <ul>
+    <li><a href="#FIXME">Creative Services</a></li>
+    <li><a href="#FIXME">Multitouch Tables</a></li>
+    <li><a href="#FIXME">Touch Walls</a></li>
+    <li><a href="#FIXME">Our Story</a></li>
+    <li><a href="#FIXME">Blog</a></li>
+    <li><a href="#FIXME">Social Media Feed</a></li>
+    <li><a href="#FIXME">Contact</a></li>
+  </ul>
+</nav>

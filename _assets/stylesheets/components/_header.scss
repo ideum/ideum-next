@@ -83,10 +83,6 @@ $header-main-bar-height: rem(117);
     @include outer-container;
   }
 
-  nav {
-    @include flex(2);
-  }
-
   .logo {
     @include flex(1);
     text-align: center;
@@ -101,11 +97,23 @@ $header-main-bar-height: rem(117);
 
   nav {
     @include navi-effect($very-dark-gray);
-    @include span-columns(6, block-collapse);
+    @include flex(2);
+
     text-align: center;
 
+    button {
+      display: block;
+      @include media($medium-screen-up) { display: none }
+
+      float: right;
+      background-color: transparent;
+      border: none;
+    }
+
     ul {
-      display:inline-block;
+      display: none;
+      @include media($medium-screen-up) { display: inline-block }
+
       li {
         display: inline-block;
         margin-right: 2em;

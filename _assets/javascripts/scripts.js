@@ -4,6 +4,7 @@
 //= require ./slider
 //= require_self
 //= require ./animations
+//= require ./header
 //= require ./footer
 
 (function () {
