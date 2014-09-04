@@ -87,7 +87,7 @@ layout: default
       <li></li>
     </ol>
 
-    <a href="#FIXME" class="button active">View All</a>
+    <p><a href="#FIXME" class="button active">View All</a></p>
 
   </div>
 
@@ -182,6 +182,8 @@ layout: default
 
 </section>
 
+
+
 <section class="featured-pages">
 
   <article class="content initiatives">
@@ -227,6 +229,9 @@ layout: default
 
 </section>
 
+
+
+
 <section class="social-media-feed">
 
   <div class="section-info">
@@ -239,20 +244,24 @@ layout: default
 
   <div class="social-media-feed-slider">
 
-    <article class="youtube item">
+    <div ideum-slider>
 
-      <video controls style="width:100%;height:auto;" poster="{{ 'placeholder-buzz-feed-1.jpg' | asset_path }}">
+      <article ideum-slide class="youtube item">
+
+      <video controls style="width:100%;height:375px;" poster="{{ 'placeholder-buzz-feed-1.jpg' | asset_path }}">
       </video>
 
       <i class="social-icon youtube"></i>
 
     </article>
 
-    <article class="twitter item">
+    <article ideum-slide class="twitter item">
 
       <div class="content">
 
-        <h2>Ideum Daily is out! http://paper.li/ideum/1406302985 … Stories via @paige_roberts @carlfranklin</h2>
+        <p>
+          Ideum Daily is out! http://paper.li/ideum/1406302985 … Stories via @mdscaff @ntcoding @NeinQuarterly
+        </p>
 
         <footer class="footer">
           <a class="read" href="#FIXME">Retweet</a>
@@ -265,13 +274,29 @@ layout: default
 
     </article>
 
-    <article class="flickr item">
+    <article ideum-slide class="flickr item">
 
       {% image placeholder-buzz-feed-2.jpg %}
 
       <i class="social-icon flickr"></i>
 
     </article>
+      
+    </div>
+
+  </div>
+
+  <div class="section-info">
+
+    <ol class="slider-controls">
+      <li class="active"></li>
+      <li>&nbsp;</li>
+      <li>&nbsp;</li>
+      <li>&nbsp;</li>
+      <li>&nbsp;</li>
+    </ol>
+
+    <p><a href="#FIXME" class="button active">View All</a></p>
 
   </div>
 
