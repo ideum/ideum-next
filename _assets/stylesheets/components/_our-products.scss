@@ -1,0 +1,50 @@
+.our-products { 
+    /* no op */
+    .section-info {
+      padding-bottom: $medium-gutter;
+    }
+    .touch-tables {
+      background-color: $salmon;
+      min-height: 380px;
+      position: relative;
+      .content {
+        /* no op */
+        .img-wrap {
+          display: none;
+          @include media($medium-screen-up) {
+            display: block;
+          }
+          img {
+            display: block;
+            position: absolute;
+              bottom: 0; right: 0;            
+            width: 50%;
+          }
+        }
+        .txt-wrap {
+          padding: 0 0 $medium-gutter 0;
+          @include media($medium-screen-up) {
+            padding: $medium-gutter 0;
+          }
+          h1, h1 a, p {
+            color: $white;
+
+            &:hover {
+              color: darken($white, 15);
+            }
+            
+          }
+          .read, .share {
+            float: initial;
+            margin-right: 1em;
+          }
+           a.read, a.share {
+            color: $white;
+            &:hover {
+              color: darken($white, 15);
+            }
+          }
+        }
+      }
+    }
+  }
