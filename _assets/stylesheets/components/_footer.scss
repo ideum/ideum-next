@@ -115,18 +115,5 @@ $footer-font-color: $white;
         @include flex(1);
       }
     }
-
-    // nav.sitemap, .newsletter-signup {
-    //   @include transition(transform $base-animation-speed $base-animation-easing);
-    //   @include transform-origin(top);
-    //
-    //   // show
-    //   &.ng-hide-remove        { @include transform(scaleY(0)) }
-    //   &.ng-hide-remove-active { @include transform(scaleY(1)) }
-    //
-    //   // hide
-    //   &.ng-hide-add        { @include transform(scaleY(1)) }
-    //   &.ng-hide-add-active { @include transform(scaleY(0)) }
-    // }
   }
 }
