@@ -17,10 +17,12 @@ $footer-font-color: $white;
       @include media($medium-screen-up) { display: none }
 
       button {
-        border: none;
         @include span-columns(6, block-collapse);
         @include pad(rem(30) default);
-        @include clearfix;
+
+        border: none;
+        color: $footer-font-color;
+        margin: 0;
 
         span { float: left  }
         i {
