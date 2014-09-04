@@ -10,85 +10,68 @@ $header-main-bar-height: rem(117);
       display: block;
     }
 
-    @include fill-parent;
     @include clearfix;
 
     border-bottom: 1px solid $vv-light-gray;
 
+    .social-interior { @include outer-container }
+
     h2, ul {
-      //height: $header-social-bar-height;
-      height:auto;
       line-height: $header-social-bar-height;
       vertical-align: middle;
     }
 
     h2 {
+      @include pad(0 default);
+
       border-right:1px solid $vv-light-gray;
-      color: $white;
       float: left;
       font-size: rem(14);
       font-weight: $bold;
       text-align: center;
       text-transform: uppercase;
-      @include span-columns(3, block-collapse); 
       &:first-of-type {
         border-left:1px solid $vv-light-gray;
-        @include shift(1.9);
-      }  
+      }
+
       a {
         color: $medium-light-gray;
-        &:hover {
-          color: $very-dark-gray;
-        }
-      } 
-      &.active {
-        a{
-          color: $very-dark-gray;
-          &:hover {
-            color: $dark-gray;
-          }
-        }
-      }  
+        &:hover { color: $very-dark-gray }
+      }
+      &.active a {
+        color: $very-dark-gray;
+        &:hover { color: $dark-gray }
+      }
     }
 
-    .social-icons-wrap {
-      @include span-columns(6, block-collapse);
-      text-align: center;
-    }
-    .tab-wrap {
-      align-items: stretch;
-      display: flex !important;
-      @include span-columns(6, block-collapse);
+    ul.social-icons {
+      float: right;
     }
 
     li {
       display: inline-block;
       padding-right: 1em;
       a {
-        display: inline-block;
         @include size(24px 24px);
+        background: $white;
         border: 1px solid $light-gray;
         border-radius: 12px;
+        color: $light-gray;
+        display: inline-block;
+        font-size: 11px;
         line-height: 21px;
         text-align: center;
         vertical-align: middle;
-        font-size: 11px;
-        background: $white;
-        color: $light-gray;
         &:hover {
           background-color: $very-dark-gray;
-          border: 1px solid $very-dark-gray;
+          border-color: $very-dark-gray;
           color: $white;
           font-size:12px;
         }
-        .facebook {
-          position: relative;
-            left:-2px; top:-1px;
-        }
+
+        // Tweak the position of disagreeable icons
+        .facebook { @include position(relative, -1px null null -2px) }
       }
-    }
-    .social-interior {
-      @include outer-container;
     }
   }
 
@@ -100,22 +83,17 @@ $header-main-bar-height: rem(117);
     @include outer-container;
   }
 
-  .logo {
-    @include flex(1);
-  }
-
   nav {
     @include flex(2);
-    @include shift(-.4);
   }
 
   .logo {
-    @include shift(1);
+    @include flex(1);
+    text-align: center;
 
     a {
       display: inline-block;
       @include hide-text;
-      &:before { height: 120%; } // 100% isn't enough to mask all the risers
       background: image-url("logo.png") no-repeat center center;
       @include size(129px 50px);
     }
