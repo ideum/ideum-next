@@ -68,9 +68,6 @@ $header-main-bar-height: rem(117);
           color: $white;
           font-size:12px;
         }
-
-        // Tweak the position of disagreeable icons
-        .facebook { @include position(relative, -1px null null -2px) }
       }
     }
   }
