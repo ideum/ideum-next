@@ -17,6 +17,11 @@
 
     @include media($medium-screen-up) { width: (100% / 2); }
     @include media($large-screen-up)  { width: (100% / 3); }
+
+    &.product-slide {
+      @include media($medium-screen-up) { width: (100% / 1); }
+      @include media($large-screen-up)  { width: (100% / 1); }
+    }
   }
 
   button.previous {
@@ -29,5 +34,36 @@
     @include position(absolute, 0 0 0 null);
     height: rem(50);
     margin: auto;
+  }
+}
+
+// the slider pips
+ol {
+  @include clearfix;
+  clear: both;
+  display: inline-block;
+  padding-bottom: $gutter;
+  text-align: center;
+  &.slider-controls {
+    li {
+      background-color: $very-light-gray;
+      border-radius: 50%;
+      float: left;
+      height: 14px;
+      margin: 0 .6em;
+      width: 14px;
+      &:hover {
+        background-color: $deep-slate-blue;
+      }
+      &.active {
+        background-color: $white;
+        border: 3px solid $deep-slate-blue;
+        height: 16px;
+        width: 16px;
+        &:hover {
+          border: 3px solid $light-gray;
+        }
+      }
+    }
   }
 }
