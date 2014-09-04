@@ -9,8 +9,8 @@
         '<div class="slides" ng-transclude>' +
         '</div>' +
 
-        '<button class="previous" ng-click="slidePrev()">&larr;</button>' +
-        '<button class="next" ng-click="slideNext()">&rarr;</button>',
+        '<button class="previous" ng-click="slidePrev()"><i class="icon-arrow-left"></i></button>' +
+        '<button class="next" ng-click="slideNext()"><i class="icon-arrow-right"></i></button>',
 
       transclude: true,
       link: function (scope, element, attrs) {
