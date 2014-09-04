@@ -31,3 +31,34 @@
     margin: auto;
   }
 }
+
+// the slider pips
+ol {
+  @include clearfix;
+  clear: both;
+  display: inline-block;
+  padding-bottom: $gutter;
+  text-align: center;
+  &.slider-controls {
+    li {
+      background-color: $very-light-gray;
+      border-radius: 50%;
+      float: left;
+      height: 14px;
+      margin: 0 .6em;
+      width: 14px;
+      &:hover {
+        background-color: $deep-slate-blue;
+      }
+      &.active {
+        background-color: $white;
+        border: 3px solid $deep-slate-blue;
+        height: 16px;
+        width: 16px;
+        &:hover {
+          border: 3px solid $light-gray;
+        }
+      }
+    }
+  }
+}
