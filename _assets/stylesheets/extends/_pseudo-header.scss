@@ -1,0 +1,72 @@
+#pseudo-header {
+        @include clearfix;
+  position: relative; // Force a new z-index stacking context
+  z-index: 0;
+
+  // adjustments to pseudo-header will vary by page (as class)
+  &.home {
+    background-color: #62A6E7;
+
+    @include media($medium-screen-up) {
+      // make sure to add a color as well as an image - color continues where image ends
+      background: #62A6E7 image-url('home-pseudo-header-bg.jpg') no-repeat center center;
+      height: 799px; // this should be the height of the image being used above
+      margin-bottom: -177px; // offset for amount content will ride over img
+    }
+
+    .mobile-pseudo-header {
+      img {
+        display: block;
+        width:100%;
+      }
+    }
+
+    #page-intro-outer {
+      @include span-columns(10);
+      @include shift(1);
+
+      @include media($medium-screen-up) {
+        @include outer-container;
+        padding: 165px 0 0 110px;
+      }
+
+      #page-intro-inner {
+        
+        @include media($medium-screen-up) {
+          width: 400px;
+        }
+
+        h1 a, a.view, a.share, a.read {
+          font-weight: $bold;
+          color: $white;
+
+          &:hover {
+            color: lighten($very-dark-gray, 15);
+          }
+
+        }
+
+        h2 {
+          display: none;
+          @include media($medium-screen-up) {
+            color: $white;
+            display: block;
+          }
+        }
+
+        .footer {
+          margin: $medium-gutter 0;
+
+          .view, .share {
+            margin-left: $medium-gutter;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
