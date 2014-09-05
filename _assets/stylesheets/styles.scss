@@ -19,7 +19,6 @@
 @import 'extends/button';
 @import 'extends/clearfix';
 @import 'extends/hide-text';
-@import 'extends/pseudo-header';
 
 // Typography and Elements
 @import 'layout';
@@ -32,6 +31,7 @@
 
 // Page Components
 @import 'components/header';
+@import 'components/header-image';
 @import 'components/content';
 @import 'components/footer';
 @import 'components/slider';

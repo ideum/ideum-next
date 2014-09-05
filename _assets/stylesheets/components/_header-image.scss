@@ -1,10 +1,10 @@
-#pseudo-header {
+#header .header-image {
   @include clearfix;
   position: relative; // Force a new z-index stacking context
   z-index: 0;
 
   // adjustments to pseudo-header will vary by page (as class)
-  &.home {
+  .home {
     background-color: #62A6E7;
 
     @include media($medium-screen-up) {
@@ -26,7 +26,7 @@
       @include shift(1);
 
       #page-intro-inner {
-        
+
         @include media($small-screen-up) {
           margin-left: 5%;
         }
@@ -61,9 +61,9 @@
 
         .footer {
           margin: $medium-gutter 0;
-          
+
           a {
-            
+
             &:hover {
               border-bottom: 3px solid #fff;
               color: $white;
