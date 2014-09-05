@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/kevindew/jekyll-contentblocks.git
+  revision: fa52a1488f37a82b18e78891e829cbc4b66e79c7
+  ref: fa52a1488f37a82b18e78891e829cbc4b66e79c7
+  specs:
+    jekyll-contentblocks (0.0.2)
+      jekyll
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -120,4 +128,5 @@ DEPENDENCIES
   guard-livereload
   jekyll (~> 2.3.0)
   jekyll-assets (~> 0.9.2)
+  jekyll-contentblocks!
   neat (~> 1.6)

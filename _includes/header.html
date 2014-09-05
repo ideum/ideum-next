@@ -1,4 +1,6 @@
-<header id="header" ng-controller="headerCtrl">
+{% capture header_image %}{% contentblock header-image %}{% endcapture %}
+
+<header id="header" {% if header_image != '' %}class="has-image"{% endif %} ng-controller="headerCtrl">
 
   <section class="social-media-links">
 
@@ -45,6 +47,11 @@
 
   </div>
 
+  {% if header_image != '' %}
+    <div class="header-image">
+      {{ header_image }}
+    </div>
+  {% endif %}
 </header>
 
 <nav id="mobile-slideout-menu" ideum-mobile-slideout-menu ng-show="open">
