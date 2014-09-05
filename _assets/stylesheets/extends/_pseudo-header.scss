@@ -1,5 +1,5 @@
 #pseudo-header {
-        @include clearfix;
+  @include clearfix;
   position: relative; // Force a new z-index stacking context
   z-index: 0;
 
@@ -25,15 +25,20 @@
       @include span-columns(10);
       @include shift(1);
 
-      @include media($medium-screen-up) {
-        @include outer-container;
-        padding: 165px 0 0 110px;
-      }
-
       #page-intro-inner {
         
+        @include media($small-screen-up) {
+          margin-left: 5%;
+        }
+
         @include media($medium-screen-up) {
+          margin-left: 5%;
+          padding-top: 165px;
           width: 400px;
+        }
+
+        @include media($large-screen-up) {
+          margin-left: 10%;
         }
 
         h1 a, a.view, a.share, a.read {
@@ -41,7 +46,7 @@
           color: $white;
 
           &:hover {
-            color: lighten($very-dark-gray, 15);
+            color: $very-light-gray;
           }
 
         }
@@ -56,9 +61,18 @@
 
         .footer {
           margin: $medium-gutter 0;
+          
+          a {
+            
+            &:hover {
+              border-bottom: 3px solid #fff;
+              color: $white;
+              padding-bottom: 5px;
+            }
+            &.share {
+              margin-left: $medium-gutter;
+            }
 
-          .view, .share {
-            margin-left: $medium-gutter;
           }
 
         }
