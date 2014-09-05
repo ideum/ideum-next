@@ -1,4 +1,5 @@
 #content {
+  
   border-radius: $base-border-radius;
   overflow: hidden;
   padding: rem(30) 0 0 0;
@@ -52,6 +53,24 @@
       &.img-right {
         .img-wrap{ @include shift(6); }
         .txt-wrap{ @include shift(-11); }
+      }
+
+      .img-wrap {
+        position: relative;
+        
+        a {
+          float: left;
+          position: relative;
+            left: 50%;
+
+          img {
+            display: block;
+            float: left;
+            max-width: initial;
+            position: relative;
+              right: 50%;
+          }
+        }
       }
 
     }

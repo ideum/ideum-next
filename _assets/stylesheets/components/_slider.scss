@@ -25,15 +25,21 @@
   }
 
   button.previous {
-    @include position(absolute, 0 null 0 0);
-    height: rem(50);
-    margin: auto;
+    display: none;
+    @include media($medium-screen-up) { 
+      @include position(absolute, 0 null 0 0);
+      height: rem(50);
+      margin: auto;
+    }
   }
 
   button.next {
-    @include position(absolute, 0 0 0 null);
-    height: rem(50);
-    margin: auto;
+    display: none;
+    @include media($medium-screen-up) { 
+      @include position(absolute, 0 0 0 null);
+      height: rem(50);
+      margin: auto;
+    }
   }
 }
 
