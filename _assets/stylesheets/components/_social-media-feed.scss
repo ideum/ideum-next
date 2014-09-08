@@ -37,7 +37,7 @@
         color: $white;
         font-size: 32px;
         position: absolute;
-        left: rem(18); top: rem(10);
+        left: 10%; top: 6%;
       }
 
       &.youtube {
@@ -50,7 +50,7 @@
         .content {
           width:80%;
           margin:0 auto;
-          padding: ($large-gutter + $gutter ) 0;
+          padding: ($large-gutter * 2) 0;
 
           p {
             color: $white;
