@@ -31,8 +31,12 @@ layout: default
 
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem excepturi unde itaque deleniti eaque, ea cupiditate magni nesciunt! Molestias ab, ducimus assumenda temporibus veritatis sunt pariatur dolorem perspiciatis odio eaque.</p>
 
-    <select><option>Browse By Type</option></select>
-    <select><option>Browse By Topic</option></select>
+    <select ui-select2 ng-model="projectType" data-placeholder="Browse By Type">
+      <option value=""></option>
+    </select>
+    <select ui-select2 ng-model="projectTopic" data-placeholder="Browse By Topic">
+      <option value=""></option>
+    </select>
 
   </div>
 

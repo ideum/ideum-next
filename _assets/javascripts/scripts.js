@@ -1,9 +1,14 @@
 //= require jquery
+//= require select2
 //= require angular/angular
 //= require angular/angular-animate
 //= require angular/angular-touch
+//
 //= require angular-carousel
+//= require angular-ui-select2
+//
 //= require_self
+//
 //= require ./animations
 //= require ./header
 //= require ./footer
@@ -16,7 +21,8 @@
     'ngAnimate',
 
     // Third-party libraries
-    'angular-carousel'
+    'angular-carousel',
+    'ui.select2'
 
     // Project code
   ]);
