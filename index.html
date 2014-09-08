@@ -147,7 +147,12 @@ layout: default
 
 </section>
 
-<section class="our-products">
+{% comment %}
+`productSliderIndex` is used to track the status of the product slider
+contained within.  It must be initialized to zero (the first slide) before the
+slider initializes.
+{% endcomment %}
+<section class="our-products" ng-init="productSliderIndex = 0">
 
   <div class="section-info">
 
@@ -155,14 +160,16 @@ layout: default
 
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae autem dicta eaque, deleniti hic cum. Dolores minima, beatae a explicabo, doloremque debitis deserunt alias quam nam veritatis atque! Sit, voluptas.</p>
 
-    <button class="pointer active">Touch Tables</button>
-    <button class="pointer">Touch Walls</button>
+    <button class="pointer" ng-class="{active: productSliderIndex == 0}"
+      ng-click="productSliderIndex = 0">Touch Tables</button>
+    <button class="pointer" ng-class="{active: productSliderIndex == 1}"
+      ng-click="productSliderIndex = 1">Touch Walls</button>
 
   </div>
 
-  <div ideum-slider>
+  <ul rn-carousel rn-carousel-index="productSliderIndex">
 
-    <article ideum-slide class="product-slide">
+    <li class="product-slide">
 
       <div class="touch-tables product-item post-style img-right">
 
@@ -195,9 +202,9 @@ layout: default
 
       </div>
 
-    </article>
+    </li>
 
-    <article ideum-slide class="product-slide">
+    <li class="product-slide">
 
       <div class="touch-walls product-item post-style img-left">
 
@@ -230,7 +237,7 @@ layout: default
 
       </div>
 
-    </article>
+    </li>
 
   </div>
 
