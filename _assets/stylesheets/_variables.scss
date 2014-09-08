@@ -86,6 +86,7 @@ $ultra-bold: 900;
 $base-link-color: $base-accent-color;
 $hover-link-color: darken($base-accent-color, 15);
 $base-button-color: $very-dark-gray;
+$hover-button-color: lighten($base-button-color, 15);
 $inactive-button-color: $very-light-gray;
 
 // Border color

@@ -28,7 +28,7 @@
 
   &:hover {
     background-color: $inactive-button-color;
-    color: $base-background-color;
+    color: $base-button-color;
     &.pointer:after {
       @include triangle(32px, $inactive-button-color, down);
     }
@@ -37,12 +37,17 @@
     background-color: $base-button-color;
     border-color: $base-button-color;
     color: $base-background-color;
-    &:hover {
-      background-color: $base-button-color;
-      color: $base-background-color;
-    }
     &.pointer:after {
       @include triangle(32px, $base-button-color, down);
     }
+    &:hover {
+      background-color: lighten($base-button-color, 15);
+      border-color: $hover-button-color;
+      color: $base-background-color;
+      &.pointer:after {
+        @include triangle(32px, $hover-button-color, down);
+      }
+    }
+    
   }
 }
