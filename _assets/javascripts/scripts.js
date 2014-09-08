@@ -3,7 +3,6 @@
 //= require angular/angular-animate
 //= require angular/angular-touch
 //= require angular-carousel
-//= require ./slider
 //= require_self
 //= require ./animations
 //= require ./header
@@ -17,10 +16,9 @@
     'ngAnimate',
 
     // Third-party libraries
-    'angular-carousel',
+    'angular-carousel'
 
     // Project code
-    'ideum.slider'
   ]);
 
 })();
