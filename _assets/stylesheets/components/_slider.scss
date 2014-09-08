@@ -1,74 +1,61 @@
 .slider {
-  position: relative;
-
-  .slides {
-    @include display(flex);
-    @include transition(transform $base-animation-speed $base-animation-easing);
-
-    height: 100%;
-  }
-
   .slide {
-    @include flex-shrink(0); // Don't go below the specified width
+    // height: 100%;
+    // width: 100%;
 
-    height: 100%;
-    overflow: hidden;
-    width: 100%;
+    // @include media($medium-screen-up) { width: (100% / 2); }
+    // @include media($large-screen-up)  { width: (100% / 3); }
 
-    @include media($medium-screen-up) { width: (100% / 2); }
-    @include media($large-screen-up)  { width: (100% / 3); }
-
-    &.product-slide {
-      @include media($medium-screen-up) { width: (100% / 1); }
-      @include media($large-screen-up)  { width: (100% / 1); }
-    }
+    // &.product-slide {
+    //   @include media($medium-screen-up) { width: (100% / 1); }
+    //   @include media($large-screen-up)  { width: (100% / 1); }
+    // }
   }
+}
 
-  button.previous {
-    display: none;
-    @include media($medium-screen-up) { 
-      @include position(absolute, 0 null 0 0);
-      height: rem(50);
-      margin: auto;
-    }
-  }
+.rn-carousel-controls {
+  .rn-carousel-control {
+    background: $very-light-gray;
+    display: block;
+    font-size: rem(18);
+    opacity: 0.9;
+    @include size(rem(70));
+    line-height: rem(70);
+    text-align: center;
+    vertical-align: middle;
 
-  button.next {
-    display: none;
-    @include media($medium-screen-up) { 
-      @include position(absolute, 0 0 0 null);
-      height: rem(50);
-      margin: auto;
-    }
+    &:hover { opacity: 1 }
+    &-prev { @extend .icon-arrow-left;  left: 0;  }
+    &-next { @extend .icon-arrow-right; right: 0; }
   }
 }
 
 // the slider pips
-ol {
-  @include clearfix;
-  clear: both;
-  display: inline-block;
-  padding-bottom: $gutter;
-  text-align: center;
-  &.slider-controls {
-    li {
-      background-color: $very-light-gray;
-      border-radius: 50%;
-      float: left;
-      height: 14px;
-      margin: 0 .6em;
-      width: 14px;
+.rn-carousel-indicator {
+  // Remove default background
+  background: transparent;
+  box-sizing: content-box;
+  @include pad(default 0);
+
+  span {
+    @include size(14px);
+    background-color: $very-light-gray;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 .6em;
+
+    // Remove default pip
+    &:before { content: '' }
+
+    &:hover {
+      background-color: $very-dark-gray;
+    }
+    &.active {
+      @include size(16px);
+      background-color: $white;
+      border: 3px solid $very-dark-gray;
       &:hover {
-        background-color: $very-dark-gray;
-      }
-      &.active {
-        background-color: $white;
-        border: 3px solid $very-dark-gray;
-        height: 16px;
-        width: 16px;
-        &:hover {
-          border: 3px solid $light-gray;
-        }
+        border: 3px solid $light-gray;
       }
     }
   }

@@ -31,16 +31,19 @@ $icons: (
 
 @include font-face(ideum-icons, 'ideum-icons', $asset-pipeline: true);
 
- [class^="icon-"]:before, [class*=" icon-"]:before {
+%icon {
   font-family: icons;
   font-family: ideum-icons;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   speak: none;
-  text-transform: none
+  text-transform: none;
 }
 
 @each $icon, $codepoint in $icons {
-  .icon-#{$icon}:before { content: $codepoint; }
+  .icon-#{$icon} {
+    @extend %icon;
+    &:before { content: $codepoint }
+  }
 }
