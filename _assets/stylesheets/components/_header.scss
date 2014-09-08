@@ -7,6 +7,9 @@ $header-main-bar-height: rem(117);
   .social-media-links {
     display: none;
     @include media($medium-screen-up) {
+      display: flex;
+    }
+     @include media($large-screen-up) {
       display: block;
     }
 
@@ -14,7 +17,27 @@ $header-main-bar-height: rem(117);
 
     border-bottom: 1px solid $vv-light-gray;
 
-    .social-interior { @include outer-container }
+    .social-interior { 
+      @include outer-container;
+      @include media($medium-screen-up) { 
+        display: flex;
+        width: 100%
+      }
+      @include media($large-screen-up) { 
+        display: block;
+        width: auto;
+      }
+      .tabs {
+        @include media($medium-screen-up) { 
+          display: flex;
+          width: 100%;
+        }
+        @include media($large-screen-up) { 
+          display: block;
+          width: auto;
+        }
+      }
+    }
 
     h2, ul {
       line-height: $header-social-bar-height;
@@ -23,8 +46,14 @@ $header-main-bar-height: rem(117);
 
     h2 {
       @include pad(0 default);
-
+      @include media($medium-screen-up) { 
+        @include pad(0);
+      }
+      @include media($large-screen-up) { 
+        @include pad(0 default);
+      }
       border-right:1px solid $vv-light-gray;
+      flex-grow: 3; /* default 0 */
       float: left;
       font-size: rem(14);
       font-weight: $bold;
@@ -37,6 +66,8 @@ $header-main-bar-height: rem(117);
       a {
         color: $very-light-gray;
         &:hover { color: $very-dark-gray }
+          display: block;
+          width: 100%;
       }
       &.active a {
         color: $very-dark-gray;
@@ -46,6 +77,10 @@ $header-main-bar-height: rem(117);
 
     ul.social-icons {
       float: right;
+      display: none;
+      @include media($large-screen-up) { 
+        display: block;
+      }
     }
 
     li {
@@ -82,6 +117,7 @@ $header-main-bar-height: rem(117);
 
   .logo {
     @include flex(1);
+    min-width: 165px;
     text-align: center;
 
     a {
