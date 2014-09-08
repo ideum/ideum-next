@@ -50,7 +50,7 @@
         .content {
           width:80%;
           margin:0 auto;
-          padding: ($large-gutter + $gutter ) 0;
+          padding: ($large-gutter * 2 ) 0;
 
           p {
             color: $white;
