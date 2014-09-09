@@ -302,12 +302,12 @@ slider initializes.
 
   <ul rn-carousel rn-carousel-control rn-carousel-indicator rn-carousel-index="clientSliderIndex">
 
-    <li class="client-3m client-slide"></li>
-    <li class="client-hp client-slide"></li>
-    <li class="client-exploratorium client-slide"></li>
-    <li class="client-crystalbridges client-slide"></li>
-    <li class="client-something1 client-slide"></li>
-    <li class="client-something2 client-slide"></li>
+    <li class="client-3m client-slide" ng-class="{active: clientSliderIndex==0}"></li>
+    <li class="client-hp client-slide" ng-class="{active: clientSliderIndex==1}"></li>
+    <li class="client-exploratorium client-slide" ng-class="{active: clientSliderIndex==2}"></li>
+    <li class="client-crystalbridges client-slide" ng-class="{active: clientSliderIndex==3}"></li>
+    <li class="client-something1 client-slide" ng-class="{active: clientSliderIndex==4}"></li>
+    <li class="client-something2 client-slide" ng-class="{active: clientSliderIndex==5}"></li>
 
   </ul>
 
