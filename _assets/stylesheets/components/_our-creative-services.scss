@@ -1,4 +1,12 @@
 .our-creative-services {
+  @include media($medium-screen-up) {
+    padding-bottom: $gutter * 2;
+  }
+  .section-info {
+    @include media($medium-screen-up) {
+      padding-bottom: $gutter ;
+    }
+  }
   .slide {
     position: relative;
     overflow: hidden;

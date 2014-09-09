@@ -1,17 +1,15 @@
 .social-media-feed {
-  .item {
+  @include media($medium-screen-up) {
+    padding-bottom: $gutter * 2;
   }
-}
-
-.social-media-feed {
-  padding-bottom: $gutter;
 
   .social-media-feed-slider {
     box-sizing: content-box;
 
     .item {
-      position: relative;
       height: 375px;
+      overflow: hidden;
+      position: relative;
 
       * { color: $vv-light-gray; }
 
@@ -73,7 +71,7 @@
         }
 
         .read, .share {
-          float: initial;
+          float: left;
           margin-right:1em;
         }
 

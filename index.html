@@ -4,8 +4,11 @@ layout: default
 
 {% contentfor header-image %}
   <div class="home">
+
     <div class="page-intro">
+
       <div class="page-intro-inner">
+
           <h1>
               <a href="">Visit Indy 3D <br>Interactive Exhibit</a>
           </h1>
@@ -18,8 +21,11 @@ layout: default
             <a class="read" href="#FIXME">View Project</a>
             <a class="share" href="#FIXME">Share This</a>
           </footer>
+
       </div>
+
     </div>
+
   </div>
 {% endcontentfor %}
 
@@ -54,20 +60,21 @@ layout: default
       {% image placeholder-science-project-1.jpg %}
 
       <div class="content">
+
         <header>
+
           <h2 class="category">
             Science
           </h2>
+
           <h1 class="title">
-            Project Title
+            Beyond Rubik’s Cube and Groovik’s Cube Traveling Exhibit
           </h1>
+
         </header>
 
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
-          ipsum aperiam, non nihil voluptate eligendi, quas obcaecati voluptatum
-          unde voluptas iusto optio omnis possimus? Placeat accusantium
-          reprehenderit dicta rem? Illo!
+          Limited to 70 characters dolor sit amet, consectetuer adipiscing.
         </p>
 
       </div>
@@ -81,20 +88,18 @@ layout: default
       <div class="content">
 
         <header>
+
           <h2 class="category">
             Science
           </h2>
+
           <h1 class="title">
-            Project Title
+            Explore the natural resources of New Mexico with a new approach to multiuser interaction.
           </h1>
+
         </header>
 
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
-          ipsum aperiam, non nihil voluptate eligendi, quas obcaecati voluptatum
-          unde voluptas iusto optio omnis possimus? Placeat accusantium
-          reprehenderit dicta rem? Illo!
-        </p>
+        <p></p>
 
       </div>
     </li>
@@ -110,15 +115,12 @@ layout: default
             Science
           </h2>
           <h1 class="title">
-            Project Title
+            Discover The World Cup
           </h1>
         </header>
 
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
-        ipsum aperiam, non nihil voluptate eligendi, quas obcaecati voluptatum
-        unde voluptas iusto optio omnis possimus? Placeat accusantium
-        reprehenderit dicta rem? Illo!
+          Ideum celebrates The World Cup adding additional levels of engagement.
         </p>
 
       </div>
@@ -137,7 +139,7 @@ layout: default
       <li></li>
     </ol>
 
-    <p><a href="#FIXME" class="button active">View All</a></p>
+    <p class=""><a href="#FIXME" class="button active">View All</a></p>
 
   </div>
 
@@ -226,7 +228,7 @@ slider initializes.
             </p>
 
             <footer class="footer">
-              <a class="read" href="#FIXME">View Our Selection</a>
+              <a class="read" href="#FIXME">View Selection</a>
               <a class="share" href="#FIXME">Share This</a>
             </footer>
 
@@ -261,7 +263,7 @@ slider initializes.
             </p>
 
             <footer class="footer">
-              <a class="read" href="#FIXME">View Our Selection</a>
+              <a class="read" href="#FIXME">View Selection</a>
               <a class="share" href="#FIXME">Share This</a>
             </footer>
 
@@ -302,18 +304,26 @@ slider initializes.
 
   <ul rn-carousel rn-carousel-control rn-carousel-indicator rn-carousel-index="clientSliderIndex">
 
-    <li class="client-3m client-slide" ng-class="{active: clientSliderIndex==0}"></li>
-    <li class="client-hp client-slide" ng-class="{active: clientSliderIndex==1}"></li>
-    <li class="client-exploratorium client-slide" ng-class="{active: clientSliderIndex==2}"></li>
-    <li class="client-crystalbridges client-slide" ng-class="{active: clientSliderIndex==3}"></li>
-    <li class="client-something1 client-slide" ng-class="{active: clientSliderIndex==4}"></li>
-    <li class="client-something2 client-slide" ng-class="{active: clientSliderIndex==5}"></li>
+    <li class="client-slide" ng-class="{active: clientSliderIndex==0}">
+      <img src="{{ 'placeholder-client-n-partner-3m.png'              | asset_path }}">
+    </li>
+    <li class="client-slide" ng-class="{active: clientSliderIndex==1}">
+      <img src="{{ 'placeholder-client-n-partner-hp.png'              | asset_path }}">
+    </li>
+    <li class="client-slide" ng-class="{active: clientSliderIndex==2}">
+      <img src="{{ 'placeholder-client-n-partner-exploratorium.png'   | asset_path }}">
+    </li>
+    <li class="client-slide" ng-class="{active: clientSliderIndex==3}">
+      <img src="{{ 'placeholder-client-n-partner-crystalbridges.png'  | asset_path }}">
+    </li>
+    <li class="client-slide" ng-class="{active: clientSliderIndex==4}">
+      <img src="{{ 'placeholder-client-n-partner-something1.png'      | asset_path }}">
+    </li>
+    <li class="client-slide" ng-class="{active: clientSliderIndex==5}">
+      <img src="{{ 'placeholder-client-n-partner-something2.png'      | asset_path }}">
+    </li>
 
   </ul>
-
-    </article>
-
-  </article>
 
   <div class="section-info">
 
@@ -325,9 +335,32 @@ slider initializes.
       <li></li>
     </ol>
 
-    <p><a href="#FIXME" class="button active">View Full CLient List</a></p>
+    <p>
+      <a href="#FIXME" class="button active">View Client List</a>
+    </p>
 
   </div>
+
+  <ul class="other-cnp">
+    <li>
+      <img src="{{ 'placeholder-client-n-partner-3m.png'              | asset_path }}">
+    </li>
+    <li>
+      <img src="{{ 'placeholder-client-n-partner-hp.png'              | asset_path }}">
+    </li>
+    <li>
+      <img src="{{ 'placeholder-client-n-partner-exploratorium.png'   | asset_path }}">
+    </li>
+    <li class="crystalbridges">
+      <img src="{{ 'placeholder-client-n-partner-crystalbridges.png'  | asset_path }}">
+    </li>
+    <li>
+      <img src="{{ 'placeholder-client-n-partner-something1.png'      | asset_path }}">
+    </li>
+    <li>
+      <img src="{{ 'placeholder-client-n-partner-something2.png'      | asset_path }}">
+    </li>
+  </ul>
 
 </section>
 
@@ -347,7 +380,7 @@ slider initializes.
       </p>
 
       <footer class="footer">
-        <a class="read" href="#FIXME">View Our Selection</a>
+        <a class="read" href="#FIXME">View Initiatives</a>
         <a class="share" href="#FIXME">Share This</a>
       </footer>
 

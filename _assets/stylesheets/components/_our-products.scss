@@ -7,7 +7,9 @@
 
     .product-item {
       background-color: $dark-red;
-      min-height: 380px;
+      @include media($medium-screen-up) {
+        min-height: 380px;
+      }
       position: relative;
 
       .content {
