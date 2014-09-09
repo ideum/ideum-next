@@ -1,20 +1,20 @@
 .slider {
-  .slide {
-    // height: 100%;
-    // width: 100%;
+  .rn-carousel-slide {
+     height: 100%;
+     width: 100%;
 
     // @include media($medium-screen-up) { width: (100% / 2); }
     // @include media($large-screen-up)  { width: (100% / 3); }
 
-    // &.product-slide {
-     //  @include media($medium-screen-up) { width: (100% / 1); }
-      // @include media($large-screen-up)  { width: (100% / 1); }
-    // }
-     // &.client-slide {
-       // @include media($small-screen-up) { width: (100% / 2); }
-       // @include media($medium-screen-up) { width: (100% / 3); }
-       // @include media($large-screen-up)  { width: (100% / 4); }
-     // }
+    &.product-slide {
+      @include media($medium-screen-up) { width: (100% / 1); }
+      @include media($large-screen-up)  { width: (100% / 1); }
+    }
+    &.client-slide {
+      @include media($small-screen-up) { width: (100% / 2); }
+      @include media($medium-screen-up) { width: (100% / 3); }
+      @include media($large-screen-up)  { width: (100% / 4); }
+    }
    
 
   // button.previous {
@@ -41,13 +41,17 @@
 .rn-carousel-controls {
   .rn-carousel-control {
     background: $very-light-gray;
-    display: block;
+    display: none;
     font-size: rem(18);
     opacity: 0.9;
     @include size(rem(70));
     line-height: rem(70);
     text-align: center;
     vertical-align: middle;
+
+    @include media($medium-screen-up) { 
+      display: block;
+    }
 
     &:hover { opacity: 1 }
     &-prev { @extend .icon-arrow-left;  left: 0;  }
