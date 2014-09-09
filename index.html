@@ -38,8 +38,12 @@ layout: default
       reprehenderit dicta rem? Illo!
     </p>
 
-    <select><option>Browse By Type</option></select>
-    <select><option>Browse By Topic</option></select>
+    <select ui-select2 ng-model="projectType" data-placeholder="Browse By Type">
+      <option value=""></option>
+    </select>
+    <select ui-select2 ng-model="projectTopic" data-placeholder="Browse By Topic">
+      <option value=""></option>
+    </select>
 
   </div>
 

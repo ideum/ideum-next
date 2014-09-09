@@ -36,6 +36,7 @@ assets:
     - _assets/images
     - _vendor/javascripts
     - _vendor/stylesheets
+    - _vendor/images
     - _vendor/fonts
   cachebust: soft
   gzip: false
