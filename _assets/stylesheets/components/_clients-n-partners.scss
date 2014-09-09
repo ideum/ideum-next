@@ -8,6 +8,7 @@
   .slider {
     @include span-columns(12);
     @include omega;
+    height:169px;
     margin-bottom: $large-gutter;
     .slide {
       border-right: 2px solid #ccc;
