@@ -288,7 +288,7 @@ slider initializes.
 </section>
 
 
-<section class="clients-n-partners">
+<section class="clients-n-partners" ng-init="clientSliderIndex = 0">
 
   <div class="section-info">
 
@@ -300,14 +300,14 @@ slider initializes.
 
   </div>
 
-  <div ideum-slider>
+  <ul rn-carousel rn-carousel-control rn-carousel-indicator rn-carousel-index="clientSliderIndex">
 
-    <article ideum-slide class="client-3m client-slide"></article>
-    <article ideum-slide class="client-hp client-slide"></article>
-    <article ideum-slide class="client-exploratorium client-slide"></article>
-    <article ideum-slide class="client-crystalbridges client-slide"></article>
-    <article ideum-slide class="client-something1 client-slide"></article>
-    <article ideum-slide class="client-something2 client-slide"></article>
+    <li class="client-3m client-slide"></li>
+    <li class="client-hp client-slide"></li>
+    <li class="client-exploratorium client-slide"></li>
+    <li class="client-crystalbridges client-slide"></li>
+    <li class="client-something1 client-slide"></li>
+    <li class="client-something2 client-slide"></li>
 
   </ul>
 

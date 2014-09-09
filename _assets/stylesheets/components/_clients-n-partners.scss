@@ -5,12 +5,12 @@
     padding-bottom: $medium-gutter;
   }
 
-  .slider {
+  ul {
     @include span-columns(12);
     @include omega;
     height:169px;
     margin-bottom: $large-gutter;
-    .slide {
+    li.client-slide {
       border-right: 2px solid #ccc;
       flex-grow: 4;
       height: 169px;
@@ -40,13 +40,8 @@
         }
       }
       &.client-3m {
-        background: transparent image-url('placeholder-client-n-partner-3m.jpg') no-repeat 0 0;
+        background: transparent image-url('placeholder-client-n-partner-3m.jpg') no-repeat center center;
       }
     }
-  }
-
-      
-      
-
-    
+  }    
 }
