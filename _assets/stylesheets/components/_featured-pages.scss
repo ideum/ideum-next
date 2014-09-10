@@ -40,8 +40,8 @@
       @include media($medium-screen-up) {
         @include span-columns(8, block-collapse);
         @include shift(2);
+        @include flex-wrap(wrap);
         padding: $gutter 0 ($large-gutter * 2);
-        flex-wrap: wrap;
       }
 
       h1, h1 a {
