@@ -15,10 +15,10 @@
 
     li.client-slide {
       @include filter(grayscale(100%));
+      @include flex-grow(4);
       background-repeat: no-repeat;
       background-position: center;
       border-right: 2px solid #ccc;
-      flex-grow: 4;
       height: 169px;
       opacity: 0.15;
       text-align: center;
