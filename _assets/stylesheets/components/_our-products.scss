@@ -2,7 +2,10 @@
     /* no op */
 
     .section-info {
-      padding-bottom: $medium-gutter;
+      padding-bottom: $gutter;
+      @include media($medium-screen-up) {
+        padding-bottom: $medium-gutter;
+      }
     }
 
     .product-item {

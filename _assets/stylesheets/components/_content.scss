@@ -2,9 +2,12 @@
   
   border-radius: $base-border-radius;
   overflow: hidden;
-  padding: rem(30) 0 0 0;
   position: relative; // Force a new z-index stacking context
   z-index: 100;
+  
+  @include media($medium-screen-up) {
+    padding: rem(30) 0 0 0;
+  }
 
   .chat { 
     @include banner('patterns/hex.svg');
