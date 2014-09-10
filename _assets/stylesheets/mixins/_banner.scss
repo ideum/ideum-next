@@ -1,10 +1,10 @@
 @mixin banner($background-file, $background-color: $white) {
-  background: $vv-light-gray image-url($background-file) no-repeat center center;
-  text-align: center;
-  min-height: $footer-overlap-height;
-  display: flex;
+  @include display(flex);  
   align-items: center;
+  background: $vv-light-gray image-url($background-file) no-repeat center center;
   justify-content: center;
+  min-height: $footer-overlap-height;
+  text-align: center;
   .button {
     background: $background-color;
     display: inline-block;
