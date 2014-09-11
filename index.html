@@ -203,7 +203,7 @@ slider initializes.
 
   </div>
 
-  <ul rn-carousel rn-carousel-index="productSliderIndex">
+  <ul rn-carousel n-carousel-control rn-carousel-indicator rn-carousel-index="productSliderIndex">
 
     <li class="product-slide">
 
@@ -277,6 +277,18 @@ slider initializes.
 
   </div>
 
+  <div class="section-info">
+
+    <ol class="slider-controls">
+      <li class="active"></li>
+      <li>&nbsp;</li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ol>
+
+  </div>
+
 </section>
 
 <section class="chat">
@@ -302,7 +314,7 @@ slider initializes.
 
   </div>
 
-  <ul rn-carousel rn-carousel-control rn-carousel-indicator rn-carousel-index="clientSliderIndex">
+  <ul class="slider" rn-carousel rn-carousel-control rn-carousel-indicator rn-carousel-index="clientSliderIndex">
 
     <li class="client-slide" ng-class="{active: clientSliderIndex==0}">
       <img src="{{ 'placeholder-client-n-partner-3m.png'              | asset_path }}">
@@ -324,7 +336,8 @@ slider initializes.
     </li>
 
   </ul>
-
+  
+  <!-- #FIXME - why doesn't this work? -->
   <div class="section-info">
 
     <ol class="slider-controls">
