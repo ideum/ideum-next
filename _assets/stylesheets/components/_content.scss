@@ -1,9 +1,14 @@
-#content {
-  
+#content {  
   border-radius: $base-border-radius;
   overflow: hidden;
-  position: relative; // Force a new z-index stacking context
+  position: relative; // force a new z-index stacking context
   z-index: 100;
+
+  .sub-page-wrap { // removes content area padding so sub-nav flush top
+    @include media($medium-screen-up) {
+      margin-top: rem(-30);
+    }
+  }
   
   @include media($medium-screen-up) {
     padding: rem(30) 0 0 0;
@@ -69,6 +74,14 @@
 
     }
     
+
+  }
+
+  #our-story {
+
+    .highlight-text {
+      @include highlight-text(#5bd4c0, $white);
+    }
 
   }
 

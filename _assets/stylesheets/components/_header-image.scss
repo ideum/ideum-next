@@ -15,12 +15,12 @@
   // lists.  Remove duplicate after a second real item is added.
   @each $class, $color, $image in (
     ('home', #62A6E7, 'home-pseudo-header-bg'),
-    ('home', #62A6E7, 'home-pseudo-header-bg')
+    ('our-story', $medium-gray, 'our-story-pseudo-header-bg')
   ) {
     .#{$class} {
       background: $color image-url('#{$image}-phone.jpg') no-repeat bottom right;
       height: 460px;
-
+      
       @include media($medium-screen-up) {
         background: $color image-url('#{$image}.jpg') no-repeat center center;
         background-size: auto 800px;
@@ -29,6 +29,19 @@
       }
     }
   }
+
+  // begin temp hack until we get real, full-size images to use
+  .our-story { 
+ 
+    @include media($medium-screen-up) {
+      background-size: initial;
+    }
+    @include media($large-screen-up) {
+      background-size: auto 1400px;
+      
+    }
+  }
+  // end temp hack
 
   .page-intro {
     @include outer-container;
