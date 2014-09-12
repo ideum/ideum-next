@@ -12,6 +12,10 @@
     border-bottom: 1px solid $vv-light-gray;
     padding: rem(60) 0 rem(50);
 
+    &:last-of-type {
+      border: none;
+    }
+
     .point-icon {
       @include span-columns(2);
       @include display(inline-flex);
